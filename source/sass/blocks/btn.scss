@@ -1,0 +1,43 @@
+.btn {
+    @include style-reset;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    background-color: $additional-background;
+    color: $color-brand;
+    min-height: 50px;
+    outline: none;
+    border: 1px solid $color-brand;
+    border-radius: 8px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &_ghost {
+       background-color: transparent;
+       color: #ffffff;
+       border-color: #ffffff; 
+    }
+
+    &_white {
+        background-color: #ffffff;
+    }
+
+    @include tablet {
+        width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.btn__icon {
+    margin-right: 15px;
+}

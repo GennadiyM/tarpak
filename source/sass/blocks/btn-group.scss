@@ -1,0 +1,17 @@
+.btnGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    width: auto;
+  }
+}
+
+.btnGroup__item + .btnGroup__item {
+  margin-top: 15px;
+
+  @include tablet {
+    margin-top: 25px;
+  }
+}

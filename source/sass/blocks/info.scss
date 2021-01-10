@@ -1,0 +1,43 @@
+.info {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.info__img {
+  @include tablet {
+    flex-shrink: 0;
+  }
+}
+
+.info__img img {
+  width: 100%;
+  height: auto;
+
+  @include tablet {
+    width: auto;
+  }
+}
+
+.info__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+
+  a {
+    display: block;
+    color: $color-brand;
+  }
+
+  @include tablet {
+    font-size: 28px;
+    text-align: left;
+  }
+}
+
+.info__text p {
+  @include tablet {
+    font-size: 20px;
+  }
+}

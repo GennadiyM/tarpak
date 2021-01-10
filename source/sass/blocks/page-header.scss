@@ -1,0 +1,163 @@
+.pageHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+
+  &_scroll {
+    background-color: $color-bacground-main;
+    box-shadow: 0 0 17px 10px rgba(0, 0, 0, 0.07);
+  }
+
+  &_open {
+    background-color: $color-bacground-main;
+  }
+}
+
+.pageHeader__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  @include desktop {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+.pageHeader__logo {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 5px 0 0 0;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+
+  @include tablet {
+    margin-right: 15px;
+  }
+
+  @include desktop {
+    margin-right: 25px;
+  }
+}
+
+.pageHeader_open .pageHeader__logo,
+.pageHeader_scroll .pageHeader__logo {
+  background-color: transparent;
+}
+
+.pageHeader__dropdown {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background-color: transparent;
+
+  overflow-y: auto;
+  transition: transform $transition-3 0s, background $transition-3 0.3s;
+  padding-top: 110px;
+  padding-bottom: 50px;
+
+  @include tablet {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0;
+  }
+}
+
+.pageHeader_open {
+  .pageHeader__dropdown {
+    transform: translateY(100%);
+    background-color: $color-bacground-main;
+    transition: transform $transition-3 0s, background $transition-3 0s;
+  }
+}
+
+.pageHeader__toggle {
+  @include style-reset;
+
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  outline: none;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.pageHeader__toggle span {
+  display: block;
+  width: 23px;
+  height: 2px;
+  position: absolute;
+  left: 11px;
+  background-color: #ffffff;
+}
+
+.pageHeader_scroll .pageHeader__toggle span {
+  background-color: $color-brand;
+}
+
+.pageHeader__toggle span:nth-child(1) {
+  top: 18px;
+  transition: top 0.1s ease 0.3s, transform 0.1s ease 0s;
+}
+
+.pageHeader__toggle span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.2s ease 0.2s;
+}
+
+.pageHeader_open .pageHeader__toggle span {
+  background-color: $color-brand
+}
+
+.pageHeader__toggle span:nth-child(3) {
+  bottom: 18px;
+  transition: bottom 0.1s ease 0.3s, transform 0.1s ease 0s;
+}
+
+.pageHeader_open .pageHeader__toggle span:nth-child(1) {
+  top: 23px;
+  transform: rotate(45deg);
+  transition: top 0.1s ease 0s, transform 0.1s ease 0.3s;
+}
+
+.pageHeader_open .pageHeader__toggle span:nth-child(2) {
+  opacity: 0;
+  transition: opacity 0.2s ease 0.2s;
+}
+
+.pageHeader_open .pageHeader__toggle span:nth-child(3) {
+  bottom: 23px;
+  transform: rotate(-45deg);
+  transition: bottom 0.1s ease 0s, transform 0.1s ease 0.3s;
+}
+
+.pageHeader__mainNav {
+  margin-bottom: auto;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}

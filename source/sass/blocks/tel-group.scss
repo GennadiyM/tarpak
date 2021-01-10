@@ -1,0 +1,68 @@
+.telGroup {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  @include tablet {
+    margin-top: 0;
+    flex-shrink: 0;
+    width: 255px;
+    margin-left: 15px;
+  }
+
+  @include desktop {
+    margin-left: 25px;
+  }
+}
+
+.telGroup__item {
+  display: flex;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+
+  @include tablet {
+    color: #ffffff;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  p {
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  a {
+    color: $color-brand;
+    font-weight: 700;
+    text-decoration: underline;
+
+    @include tablet {
+      color: #ffffff;
+    }
+  }
+}
+
+.telGroup__item p {
+  @include style-reset;
+  margin-right: 10px;
+}
+
+.pageHeader_scroll .telGroup__item {
+  p {
+    @include tablet {
+      color: #000000;
+    }
+  }
+
+  a {
+    @include tablet {
+      color: $color-brand;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.page {
+  @include style-reset;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  &--no-scroll {
+    position: fixed;
+    overflow-y: scroll;
+  }
+}
+
+.page__header {
+  flex-shrink: 0;
+  z-index: 5;
+}
+
+.page__main {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.page__footer {
+  flex-shrink: 0;
+  min-height: 100px;
+}
+
+.page__container {
+  width: 100%;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  position: relative;
+
+  @include desktop {
+    max-width: $max-width;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop-lg {
+    padding-left: $padding-desktop-lg;
+    padding-right: $padding-desktop-lg;
+  }
+
+  &_full {
+    padding-left: 0;
+    padding-right: 0;
+    @include desktop {
+      padding-left: $padding-desktop;
+      padding-right: $padding-desktop;
+    }
+  
+    @include desktop-lg {
+      padding-left: $padding-desktop-lg;
+      padding-right: $padding-desktop-lg;
+    }
+  }
+}
+
+.pageHeader__toggle {
+  @include desktop {
+    display: none;
+  }
+}
+
+.page__block {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &_gray {
+    background-color: $additional-background;
+  }
+}
+
+.page__blockTitle {
+  @include style-reset;
+
+  color: $color-brand;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.page__blockBottom {
+  &_center {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

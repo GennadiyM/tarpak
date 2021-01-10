@@ -1,0 +1,51 @@
+.pageFooter {
+    background-color: #262626;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.pageFooter__blockTitle {
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.pageFooter__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.pageFooter__block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include tablet {
+        width: 50%;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    @include desktop {
+        width: 25%;
+        max-width: 260px;
+    }
+}
+
+.pageFooter__list {
+    @include list-reset;
+}
+
+.pageFooter__link {
+    color: #ffffff;
+    transition: color $transition-2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    @include desktop {
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}
