@@ -2,7 +2,8 @@ var mobMenu = function () {
   var Selector = {
     HEADER_TOGGLE: '.js-header-toggle',
     HEADER: '.js-header',
-    PAGE: '.page'
+    PAGE: '.page',
+    MAIN_NAV: '.pageHeader__dropdown'
   };
 
   var Class = {
@@ -15,17 +16,25 @@ var mobMenu = function () {
   if (!headerToggle) {
     return;
   }
+
   var header = document.querySelector(Selector.HEADER);
   var page = document.querySelector(Selector.PAGE);
+  var mainNav = header.querySelector(Selector.MAIN_NAV);
 
   var getToggleVisibleMenu = function () {
     header.classList.toggle(Class.HEADER_OPEN);
     page.classList.toggle(Class.NO_SCROLL);
   };
 
+  var onClickMainNav = function () {
+    getToggleVisibleMenu();
+    mainNav.removeEventListener('click', onClickMainNav);
+  };
+
   var onClickToggle = function (evt) {
     evt.preventDefault();
     getToggleVisibleMenu();
+    mainNav.addEventListener('click', onClickMainNav);
   };
 
   headerToggle.addEventListener('click', onClickToggle);

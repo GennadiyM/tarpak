@@ -78,6 +78,12 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('build/js'));
 });
 
+gulp.task('calc', function() {
+  return gulp.src('source/js/calc/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js/calc'));
+});
+
 gulp.task('server', function () {
   server.init({
     server: 'build/',
@@ -146,5 +152,5 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js', 'vendor'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js', 'vendor', 'calc'));
 gulp.task('start', gulp.series('build', 'server'));

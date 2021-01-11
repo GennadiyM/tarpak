@@ -28,7 +28,6 @@ var products = function () {
   var productsSwiper = new Swiper(productsSlider, {
     loop: true,
     centeredSlides: true,
-    mousewheel: true,
     keyboard: true,
     simulateTouch: false,
     slidesPerView: 1,

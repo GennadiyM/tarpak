@@ -42,6 +42,8 @@
 }
 
 .products__btn {
+  display: none;
+  
   @include desktop {
     position: absolute;
     top: 50%;

@@ -6,6 +6,16 @@
   min-height: 100vh;
   z-index: 0;
   overflow: hidden;
+
+  &_calc {
+    align-items: center;
+    justify-content: center;
+    padding-top: 88px;
+
+    @include tablet {
+      padding-top: 118px;
+    }
+  }
 }
 
 .promo__container {

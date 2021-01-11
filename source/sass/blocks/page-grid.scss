@@ -1,0 +1,99 @@
+.pageGrid {
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pageGrid__layout {
+  width: 100%;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  position: relative;
+
+  @include desktop {
+    max-width: $max-width;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop-lg {
+    padding-left: $padding-desktop-lg;
+    padding-right: $padding-desktop-lg;
+  }
+}
+
+.pageGrid__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.pageGrid__main {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include tablet {
+    width: 60%;
+  }
+}
+
+.pageGrid__content {
+  p {
+    @include style-reset;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  * + * {
+    margin-top: 16px;
+  }
+}
+
+.pageGrid__saidbar {
+  width: 300px;
+  flex-shrink: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pageGrid__header {
+  width: 100%;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+
+  &::after {
+    content: "";
+    width: 200%;
+    height: 2px;
+    background-color: $color-brand;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+  }
+
+  h2 {
+    @include style-reset;
+  }
+}
+
+.pageGrid__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}

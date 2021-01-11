@@ -73,6 +73,20 @@
   &_gray {
     background-color: $additional-background;
   }
+
+  &_target {
+    padding-top: 88px;
+    padding-bottom: 48px;
+
+    @include tablet {
+      padding-top: 118px;
+      padding-bottom: 80px;
+    }
+
+    @include tablet {
+      padding-top: 134px;
+    }
+  }
 }
 
 .page__blockTitle {

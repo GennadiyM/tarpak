@@ -55,6 +55,7 @@
   }
 }
 
+.pageHeader_inner .mainNav__link,
 .pageHeader_scroll .mainNav__link {
   @include tablet {
     color: $color-brand;

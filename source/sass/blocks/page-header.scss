@@ -6,9 +6,11 @@
   right: 0;
   background-color: transparent;
 
-  &_scroll {
+  &_scroll,
+  &_inner {
     background-color: $color-bacground-main;
     box-shadow: 0 0 17px 10px rgba(0, 0, 0, 0.07);
+    border-bottom: 1px solid rgba($color-brand, 0.5);
   }
 
   &_open {
@@ -48,7 +50,8 @@
 }
 
 .pageHeader_open .pageHeader__logo,
-.pageHeader_scroll .pageHeader__logo {
+.pageHeader_scroll .pageHeader__logo,
+.pageHeader_inner .pageHeader__logo {
   background-color: transparent;
 }
 
@@ -113,6 +116,7 @@
   background-color: #ffffff;
 }
 
+.pageHeader_inner .pageHeader__toggle span,
 .pageHeader_scroll .pageHeader__toggle span {
   background-color: $color-brand;
 }
