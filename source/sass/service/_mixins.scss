@@ -32,3 +32,10 @@
     overflow: hidden;
   }
 }
+
+@mixin hover {
+  &:hover {
+    cursor: pointer;
+    color: $color-accent;
+  }
+}

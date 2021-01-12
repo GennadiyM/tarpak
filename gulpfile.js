@@ -78,10 +78,31 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('calc', function() {
-  return gulp.src('source/js/calc/*.js')
+gulp.task('calc', function () {
+  return gulp.src('source/js/calc/calc.js')
+    .pipe(webpack({
+      output: {
+        filename: 'calc.js',
+      },
+      mode: isDev ? 'development' : 'production',
+      devtool: isDev ? 'eval-source-map' : 'none',
+      module: {
+        rules: [
+          {
+            exclude: '/node-modules/',
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env'],
+              }
+            },
+          }
+        ]
+      }
+    }))
     .pipe(uglify())
-    .pipe(gulp.dest('build/js/calc'));
+    .pipe(gulp.dest('build/js/calc'))
+    .pipe(server.stream());
 });
 
 gulp.task('server', function () {

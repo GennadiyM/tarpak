@@ -1,0 +1,38 @@
+.breadcrumbs {
+  @include list-reset;
+
+  margin-left: -5px;
+  margin-right: -5px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  a {
+    display: block;
+    color: #ffffff;
+    padding: 5px;
+    opacity: 0.7;
+  }
+
+  a[href] {
+    opacity: 1;
+    padding-right: 15px;
+    position: relative;
+
+    &::after {
+      display: block;
+      content: ">";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include desktop {
+      @include hover;
+
+      &:hover::after {
+        color: #ffffff;
+      }
+    }
+  }
+}

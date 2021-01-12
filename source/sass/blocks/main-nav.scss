@@ -3,8 +3,6 @@
 
   @include tablet {
     flex-grow: 1;
-    padding-left: 15px;
-    padding-right: 15px;
     max-width: 670px
   }
 }
@@ -39,7 +37,7 @@
   display: block;
   width: 100%;
   color: $color-brand;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
@@ -52,6 +50,24 @@
     font-size: 18px;
     color: #ffffff;
     padding: 5px 10px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px 5px;
+    font-weight: 700;
+    transition: color $transition-2;
+  }
+
+  @include desktop-lg {
+    padding: 5px 10px;
+  }
+}
+
+.mainNav__link[href]{
+  @include desktop-lg {
+    @include hover;
   }
 }
 

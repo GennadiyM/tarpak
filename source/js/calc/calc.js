@@ -1,4 +1,5 @@
-window.onload = function () {
+import $ from "jquery";
+
     const $step1 = $('.step1_block');
     const $step2 = $('.step2_block');
     const $step3 = $('.step3_block');
@@ -142,6 +143,4 @@ window.onload = function () {
         $('.alert_message').addClass('hidden');
         $buttonNext.removeClass('alertBtn');
     });
-    
-  };
 
