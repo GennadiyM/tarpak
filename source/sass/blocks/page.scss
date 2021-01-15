@@ -5,8 +5,10 @@
   flex-direction: column;
   min-height: 100%;
 
-  &--no-scroll {
+  &_no-scroll {
     position: fixed;
+    width: 100%;
+    height: 100%;
     overflow-y: scroll;
   }
 }
@@ -86,6 +88,10 @@
     @include tablet {
       padding-top: 134px;
     }
+  }
+
+  &_first {
+    margin-top: 100vh;
   }
 }
 
