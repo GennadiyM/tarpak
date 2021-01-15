@@ -1,6 +1,5 @@
 .telGroup {
   width: 100%;
-  list-style: none;
   padding: 0;
   margin-top: 30px;
   margin-bottom: 0;
@@ -17,6 +16,15 @@
     margin-left: 25px;
   }
 }
+
+.telGroup__list {
+  @include list-reset;
+}
+
+.telGroup__toggle {
+  display: none;
+}
+
 
 .telGroup__item {
   display: flex;

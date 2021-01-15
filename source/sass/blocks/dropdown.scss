@@ -1,0 +1,49 @@
+.dropdown {
+    position: relative;
+
+    ul {
+        @include list-reset;
+
+        margin-bottom: 10px;
+    }
+
+    a {
+        @include desktop {
+            @include hover;
+        }
+    }
+}
+
+.dropdown__area {
+
+    @include tablet {
+        position: absolute;
+        top: 100%;
+    }
+}
+
+.dropdown__toggle {
+    @include mainNavLink;
+    padding-bottom: 5px;
+
+    display: block;
+
+    input {
+        @include visuallyHidden;
+    }
+
+    @include desktop {
+        @include hover;
+    }
+}
+
+.dropdown__link {
+    display: block;
+    color: $color-brand;
+    padding: 3px 45px;
+
+    @include tablet {
+        color: #ffffff;
+        padding: 3px 10px;
+    }
+}
