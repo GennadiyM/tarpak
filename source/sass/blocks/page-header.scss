@@ -1,6 +1,7 @@
 .pageHeader {
   width: 100%;
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   right: 0;
@@ -15,13 +16,13 @@
 
   &_open {
     background-color: $color-bacground-main;
+    height: 100%;
   }
 }
 
 .pageHeader__container {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -58,17 +59,14 @@
 
 .pageHeader__dropdown {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100%;
   position: absolute;
   bottom: 100%;
   left: 0;
   background-color: transparent;
   overflow-y: auto;
   transition: transform $transition-3 0s, background $transition-3 0.3s;
-  padding-top: 110px;
+  padding-top: 100px;
   padding-bottom: 50px;
 
   @include tablet {
@@ -82,6 +80,12 @@
     padding: 0;
     overflow-y: visible;
   }
+}
+
+.pageHeader__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pageHeader_open {
