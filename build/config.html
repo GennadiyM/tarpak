@@ -62,45 +62,105 @@
 </div>
 <header class="page__header pageHeader js-header">
   <div class="pageHeader__container page__container">
-    <a href="index.html" class="pageHeader__logo">
+    <div class="pageHeader__logo">
       <picture>
         <source type="image/webp" media="(min-width: 768px)" srcset="img/logo/logo.webp 1x, img/logo/logo@2x.webp 2x">
         <source type="image/webp" srcset="img/logo/logo-mob.webp 1x, img/logo/logo-mob@2x.webp 2x">
         <source media="(min-width: 768px)" srcset="img/logo/logo.png 1x, img/logo/logo@2x.png 2x">
         <img src="img/logo/logo-mob.png" srcset="img/logo/logo.png 1x, img/logo/logo-mob@2x.png 2x" alt="Тарпак" title="Тарпак">
       </picture>
-    </a>
+    </div>
     <div class="pageHeader__dropdown">
-      <nav class="pageHeader__mainNav mainNav">
-        <ul class="mainNav__list">
-          <li class="mainNav__item">
-            <a href="company.html" class="mainNav__link">О компании</a>
-          </li>
-          <li class="mainNav__item">
-            <a class="mainNav__link">Конструктор биг-бэга</a>
-          </li>
-          <li class="mainNav__item">
-            <a href="index.html#prod" class="mainNav__link">Продукция</a>
-          </li>
-          <li class="mainNav__item">
-            <a href="#contacts" class="mainNav__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="pageHeader__telGroup telGroup">
-        <li class="telGroup__item">
-          <p>Екатеринбург:</p>
-          <a href="tel:+73433808338">+7 (343) 380-83-38</a>
-        </li>
-        <li class="telGroup__item">
-          <p>Москва:</p>
-          <a href="tel:+74995009640">+7 (499) 500-96-49</a>
-        </li>
-        <li class="telGroup__item">
-          <p>Бесплатно по РФ:</p>
-          <a href="tel:88003332608">8 800 333-26-08</a>
-        </li>
-      </ul>
+      <!-- <div class="pageHeader__wrap"> -->
+        <nav class="pageHeader__mainNav mainNav">
+          <ul class="mainNav__list">
+            <li class="mainNav__item">
+              <a href="company.html" class="mainNav__link">О компании</a>
+            </li>
+            <li class="mainNav__item">
+              <a href="config.html" class="mainNav__link">Конструктор биг-бэга</a>
+            </li>
+            <li class="mainNav__item">
+              <a href="#contacts" class="mainNav__link">Контакты</a>
+            </li>
+            <li class="mainNav__item">
+              <div class="dropdown">
+                <a href="#nowhere" class="dropdown__toggle">Продукция
+                  <span class="dropdown__icon">
+                    <svg width="8px" height="5px">
+                      <use xlink:href="#icon-toggle"></use>
+                    </svg>
+                  </span>
+                </a>
+                <ul class="dropdown__area">
+                  <li>
+                    <a class="dropdown__link" href="#nowhere">Биг-беги</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#nowhere">Мешки ПП</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#nowhere">Стрейч пленка</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#nowhere">Перчатки ХБ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#nowhere">Овощная сетка</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainNav__item">
+              <div class="dropdown">
+                <a href="#nowhere" class="dropdown__toggle">Биг-беги
+                  <span class="dropdown__icon">
+                    <svg width="8px" height="5px">
+                      <use xlink:href="#icon-toggle"></use>
+                    </svg>
+                  </span>
+                </a>
+                <ul class="dropdown__area">
+                  <li>
+                    <a class="dropdown__link" href="#nowhere">Одностропные</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#nowhere">Двухстропные</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#nowhere">Четырехстропные</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="pageHeader__telGroup telGroup">
+          <input type="checkbox" id="tels">
+          <label class="telGroup__toggle" for="tels">
+            <span class="visually-hidden">Показать телефоны</span>
+            <span class="telGroup__icon">
+              <svg width="32px" height="32px">
+                <use xlink:href="#icon-phone-toggle"></use>
+              </svg>
+            </span>
+          </label>
+          <ul class="telGroup__list">
+            <li class="telGroup__item">
+              <p>Екатеринбург:</p>
+              <a href="tel:+73433808338">+7 (343) 380-83-38</a>
+            </li>
+            <li class="telGroup__item">
+              <p>Москва:</p>
+              <a href="tel:+74995009640">+7 (499) 500-96-49</a>
+            </li>
+            <li class="telGroup__item">
+              <p>Бесплатно по РФ:</p>
+              <a href="tel:88003332608">8 800 333-26-08</a>
+            </li>
+          </ul>
+        </div>
+      <!-- </div> -->
     </div>
     <button class="pageHeader__toggle js-header-toggle" type="button" aria-label="закрыть/открыть меню">
       <span></span>
