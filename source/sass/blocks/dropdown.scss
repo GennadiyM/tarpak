@@ -15,25 +15,73 @@
 }
 
 .dropdown__area {
-
     @include tablet {
+        display: none;
         position: absolute;
         top: 100%;
+        left: 0;
+        background-color: $color-bacground-main;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $color-brand;
+
+        &::after {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid $color-bacground-main;
+            border-left: 1px solid $color-brand;
+            border-top: 1px solid $color-brand;
+            position: absolute;
+            top: -5px;
+            left: 15px;
+            content: "";
+            background-color: $color-bacground-main;
+            transform: rotate(45deg);
+        }
+
+        &:hover {
+            display: block;
+        }
     }
+}
+
+.dropdown__toggle:hover + .dropdown__area,
+.dropdown__toggle:focus + .dropdown__area{
+    display: block;
 }
 
 .dropdown__toggle {
     @include mainNavLink;
+    
+    display: block;
     padding-bottom: 5px;
 
-    display: block;
-
-    input {
-        @include visuallyHidden;
+    @include tablet {
+        padding-right: 25px;
+        position: relative;
     }
+}
 
-    @include desktop {
-        @include hover;
+.dropdown__icon {
+    display: none;
+
+    @include tablet {
+        width: 8px;
+        height: 5px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 0;
+        line-height: 0;
+
+        .dropdown__toggle:hover &,
+        .dropdown__toggle:focus & {
+            transform: translateY(-50%) rotate(180deg);
+
+        }
     }
 }
 
@@ -43,7 +91,8 @@
     padding: 3px 45px;
 
     @include tablet {
-        color: #ffffff;
         padding: 3px 10px;
+
+        @include hover;
     }
 }

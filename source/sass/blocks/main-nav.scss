@@ -3,7 +3,11 @@
 
   @include tablet {
     flex-grow: 1;
-    max-width: 500px
+    max-width: 560px
+  }
+
+  @include desktop {
+    max-width: 660px;
   }
 }
 

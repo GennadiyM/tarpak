@@ -56,17 +56,23 @@
     font-size: 18px;
     color: #ffffff;
     padding: 5px 10px;
-    cursor: pointer;
+
+    .pageHeader_scroll & {
+      color: $color-brand;
+    }
+
+    @include hover;
+
+    &:focus {
+      color: $color-accent;
+    }
   }
 
   @include desktop {
-    font-size: 16px;
     color: #ffffff;
-    padding: 5px 5px;
     font-weight: 700;
     transition: color $transition-2;
-    
-    @include hover;
+ 
   }
 
   @include desktop-lg {

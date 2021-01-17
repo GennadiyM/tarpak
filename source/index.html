@@ -66,7 +66,7 @@
       </picture>
     </div>
     <div class="pageHeader__dropdown">
-      <div class="pageHeader__wrap">
+      <!-- <div class="pageHeader__wrap"> -->
         <nav class="pageHeader__mainNav mainNav">
           <ul class="mainNav__list">
             <li class="mainNav__item">
@@ -80,7 +80,13 @@
             </li>
             <li class="mainNav__item">
               <div class="dropdown">
-                <a href="#nowhere" class="dropdown__toggle">Продукция</a>
+                <a href="#nowhere" class="dropdown__toggle">Продукция
+                  <span class="dropdown__icon">
+                    <svg width="8px" height="5px">
+                      <use xlink:href="#icon-toggle"></use>
+                    </svg>
+                  </span>
+                </a>
                 <ul class="dropdown__area">
                   <li>
                     <a class="dropdown__link" href="#nowhere">Биг-беги</a>
@@ -102,7 +108,13 @@
             </li>
             <li class="mainNav__item">
               <div class="dropdown">
-                <a href="#nowhere" class="dropdown__toggle">Биг-беги</a>
+                <a href="#nowhere" class="dropdown__toggle">Биг-беги
+                  <span class="dropdown__icon">
+                    <svg width="8px" height="5px">
+                      <use xlink:href="#icon-toggle"></use>
+                    </svg>
+                  </span>
+                </a>
                 <ul class="dropdown__area">
                   <li>
                     <a class="dropdown__link" href="#nowhere">Одностропные</a>
@@ -119,14 +131,14 @@
           </ul>
         </nav>
         <div class="pageHeader__telGroup telGroup">
-          <label class="telGroup__toggle">
+          <input type="checkbox" id="tels"></input>
+          <label class="telGroup__toggle" for="tels">
             <span class="visually-hidden">Показать телефоны</span>
             <span class="telGroup__icon">
               <svg width="32px" height="32px">
                 <use xlink:href="#icon-phone-toggle"></use>
               </svg>
             </span>
-            <input type="checkbox"></input>
           </label>
           <ul class="telGroup__list">
             <li class="telGroup__item">
@@ -143,7 +155,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
     <button class="pageHeader__toggle js-header-toggle" type="button" aria-label="закрыть/открыть меню">
       <span></span>

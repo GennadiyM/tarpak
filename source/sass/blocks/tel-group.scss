@@ -6,25 +6,122 @@
   font-family: $font-family-additional;
 
   @include tablet {
+    width: 32px;
+    height: 32px;
+    position: relative;
     margin-top: 0;
     flex-shrink: 0;
-    width: 255px;
     margin-left: 15px;
   }
 
   @include desktop {
+    width: 255px;
+    height: auto;
     margin-left: 25px;
+  }
+
+  input {
+    @include visuallyHidden;
+
+    @include tablet {
+      &:checked ~ .telGroup__toggle {
+        svg {
+          fill: $color-accent;
+        }
+      }
+
+      &:checked ~ .telGroup__list {
+        display: block;
+      }
+    }
   }
 }
 
 .telGroup__list {
   @include list-reset;
+
+  @include tablet {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    background-color: $color-bacground-main;
+    width: 270px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $color-brand;
+
+    &::after {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: 1px solid $color-bacground-main;
+      border-left: 1px solid $color-brand;
+      border-top: 1px solid $color-brand;
+      position: absolute;
+      top: -5px;
+      right: 10px;
+      content: "";
+      background-color: $color-bacground-main;
+      transform: rotate(45deg);
+    }
+  }
+
+  @include desktop {
+    display: block;
+    position: static;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .telGroup__toggle {
   display: none;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
 }
 
+.telGroup__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  line-height: 0;
+
+  svg {
+    transition: fill $transition-2;
+    fill: #ffffff;
+  }
+
+  @include tablet {
+    cursor: pointer;
+
+    &:hover {
+      svg {
+        fill: $color-accent;
+      }
+    }
+  }
+
+  .pageHeader_scroll & {
+    svg {
+      transition: none;
+      fill: $color-brand;
+    }
+  }
+}
 
 .telGroup__item {
   display: flex;
@@ -38,11 +135,17 @@
     color: #ffffff;
     padding-left: 0;
     padding-right: 0;
+    justify-content: flex-end;
   }
 
   p {
     @include tablet {
+      color: $color-text;
       font-size: 14px;
+    }
+
+    @include desktop {
+      color: #ffffff;
     }
   }
 
@@ -52,6 +155,12 @@
     text-decoration: underline;
 
     @include tablet {
+      color: $color-text;
+
+      @include hover;
+    }
+
+    @include desktop {
       color: #ffffff;
     }
   }
@@ -73,6 +182,7 @@
   a {
     @include tablet {
       color: $color-brand;
+      @include hover;
     }
   }
 }

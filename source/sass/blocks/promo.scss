@@ -16,8 +16,7 @@
     }
   }
 
-  @include desktop {
-    position: static;
+  @include tablet {
     height: 100vh;
   }
 }
