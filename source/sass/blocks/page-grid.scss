@@ -88,7 +88,10 @@
   padding-right: 15px;
   padding-top: 40px;
   padding-bottom: 40px;
-  border-left: 1px solid $color-brand;
+
+  @include tablet {
+    border-left: 1px solid $color-brand;
+  }
 
   &_no-border {
     border: none;
