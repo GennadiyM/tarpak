@@ -24,6 +24,13 @@
     padding-left: $padding-desktop-lg;
     padding-right: $padding-desktop-lg;
   }
+
+  &_decor  {
+    @include tablet {
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .pageGrid__wrapper {
@@ -85,6 +92,27 @@
 
   &_no-border {
     border: none;
+  }
+
+  &_decor {
+    width: 400px;
+    @include tablet {
+      position: relative;
+
+      &::after {
+        display: block;
+        width: 100vw;
+        height: calc(100% - 50px);
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        content: "";
+        background-color: $additional-background;
+        border-radius: 0 0 0 30px;
+        box-shadow: 0 0 17px 10px rgba(0, 0, 0, 0.07);
+      }
+    }
+    
   }
 }
 

@@ -1,6 +1,17 @@
 .big-bags {
+  width: 100%;
+}
+
+.big-bags__lid {
+  @include style-reset;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.big-bags__list {
   @include list-reset;
-  
+
   margin-left: -$padding-mobile;
   margin-right: -$padding-mobile;
   padding-left: $padding-mobile;
