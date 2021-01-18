@@ -75,6 +75,10 @@
         margin-right: 5px;
       }
     }
+
+    &.swiper-button-disabled {
+      opacity: 0.2;
+    }
   }
 
   @include desktop-lg {

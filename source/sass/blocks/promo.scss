@@ -1,23 +1,33 @@
 .promo {
   display: flex;
   width: 100%;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   z-index: 0;
   overflow: hidden;
+  position: relative;
 
   &_calc {
     align-items: center;
     justify-content: center;
-    padding-top: 88px;
+    padding-top: 100px;
+    padding-left: $padding-mobile;
+    padding-bottom: 50px;
 
     @include tablet {
-      padding-top: 118px;
+      padding-top: 150px;
+      padding-bottom: 150px;
     }
-  }
 
-  @include tablet {
-    height: 100vh;
+    @include desktop {
+      padding-left: $padding-desktop;
+      padding-right: $padding-desktop;
+    }
+
+    @include desktop-lg {
+      padding-left: $padding-desktop-lg;
+      padding-right: $padding-desktop-lg;
+    }
   }
 }
 
@@ -69,6 +79,10 @@
 
 .promo__breadcrumbs {
   margin-bottom: 24px;
+}
+
+.promo__calc {
+  width: 100%;
 }
 
 .promo__lid {

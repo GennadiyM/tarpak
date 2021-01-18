@@ -8,6 +8,11 @@
     color: #ffffff;
     font-weight: 400;
     margin-bottom: 16px;
+    font-size: 16px;
+
+    @include tablet {
+        font-size: 18px;
+    }
 }
 
 .pageFooter__row {

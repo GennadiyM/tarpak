@@ -26,8 +26,6 @@ var products = function () {
   var btnNext = products.querySelector(Selector.prevEl);
 
   var productsSwiper = new Swiper(productsSlider, {
-    loop: true,
-    centeredSlides: true,
     keyboard: true,
     simulateTouch: false,
     slidesPerView: 1,
