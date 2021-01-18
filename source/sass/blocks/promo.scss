@@ -29,6 +29,10 @@
       padding-right: $padding-desktop-lg;
     }
   }
+
+  &_inner {
+    background-color: darkgray;
+  }
 }
 
 .promo__container {
@@ -40,6 +44,7 @@
   padding-top: 140px;
   padding-bottom: 35px;
   z-index: 1;
+  width: 100%;
 }
 
 .promo__img {
@@ -78,11 +83,21 @@
 }
 
 .promo__breadcrumbs {
-  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+
+  .promo_calc & {
+    margin-bottom: 12px;
+  }
 }
 
 .promo__calc {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .promo__lid {
@@ -110,7 +125,7 @@
   color: #ffffff;
   font-size: 35px;
   line-height: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 
   span {
     color: $color-accent;
@@ -131,6 +146,22 @@
     font-size: 65px;
     line-height: 67px;
     margin-bottom: 55px;
+  }
+
+  &_row {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      width: 100vw;
+      height: 3px;
+      background-color: $color-accent;
+      display: block;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+    }
   }
 }
 

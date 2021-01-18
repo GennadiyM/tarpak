@@ -40,14 +40,14 @@
 
 .pageGrid__main {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 40px;
   padding-bottom: 40px;
 
   @include tablet {
     width: 60%;
     flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -58,10 +58,19 @@
 
   ul {
     margin-bottom: 0;
+
+    li + li {
+      margin-top: 8px;
+    }
   }
 
-  * + * {
+  * + *,
+  * + p {
     margin-top: 16px;
+  }
+
+  .pageGrid__row + .pageGrid__row {
+    margin-top: 32px;
   }
 }
 
@@ -73,6 +82,10 @@
   padding-top: 40px;
   padding-bottom: 40px;
   border-left: 1px solid $color-brand;
+
+  &_no-border {
+    border: none;
+  }
 }
 
 .pageGrid__header {
@@ -93,7 +106,7 @@
     display: block;
   }
 
-  h2 {
+  h1, h2 {
     @include style-reset;
     color: $color-brand;
   }

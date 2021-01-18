@@ -1,0 +1,32 @@
+.big-bag {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-bag__img {
+  height: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+
+  img {
+    max-height: 100%;
+  }
+}
+
+.big-bag__title {
+  @include style-reset;
+}
+
+.big-bag__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-bag__btn {
+  margin-top: auto;
+}

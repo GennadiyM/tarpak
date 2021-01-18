@@ -21,21 +21,27 @@
     padding-left: 10px;
     padding-right: 10px;
 
-    &_ghost {
-       background-color: transparent;
-       color: #ffffff;
-       border-color: #ffffff; 
-    }
-
-    &_white {
-        background-color: #ffffff;
-    }
-
     @include tablet {
         width: 300px;
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    &_ghost {
+        background-color: transparent;
+        color: #ffffff;
+        border-color: #ffffff; 
+     }
+ 
+     &_white {
+         background-color: #ffffff;
+     }
+
+     &_full {
+         @include tablet {
+             width: 100%;
+         }
+     }
 }
 
 .btn__icon {

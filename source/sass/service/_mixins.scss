@@ -61,6 +61,10 @@
       color: $color-brand;
     }
 
+    .pageHeader_inner & {
+      color: $color-brand;
+  }
+
     @include hover;
 
     &:focus {

@@ -1,0 +1,35 @@
+.big-bags {
+  @include list-reset;
+  
+  margin-left: -$padding-mobile;
+  margin-right: -$padding-mobile;
+  padding-left: $padding-mobile;
+
+  display: flex;
+  overflow-x: auto;
+
+  @include tablet {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    overflow-x: hidden;
+    justify-content: space-between;
+  }
+}
+
+.big-bags__item {
+  width: 240px;
+  flex-shrink: 0;
+  display: flex;
+
+  @include tablet {
+    flex-shrink: 1;
+    width: 30%;
+    max-width: 300px;
+  }
+}
+
+.big-bags__item + .big-bags__item {
+  margin-left: 10px;
+}
