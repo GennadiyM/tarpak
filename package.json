@@ -30,7 +30,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "inputmask": "^5.0.3",
+    "inputmask": "^5.0.5",
     "jquery": "3.5.1",
     "jump.js": "^1.0.2",
     "normalize.css": "^8.0.1",

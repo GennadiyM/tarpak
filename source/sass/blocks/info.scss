@@ -7,7 +7,13 @@
 
 .info__img {
   @include tablet {
-    flex-shrink: 0;
+    width: 50%;
+  }
+}
+
+.info__row {
+  @include tablet {
+    width: 50%;
   }
 }
 
@@ -21,17 +27,19 @@
 }
 
 .info__title {
-  text-align: center;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $font-family-additional;
 
   a {
     display: block;
     color: $color-brand;
+    white-space: nowrap;
   }
 
   @include tablet {
     font-size: 28px;
+    line-height: 32px;
     text-align: left;
   }
 }

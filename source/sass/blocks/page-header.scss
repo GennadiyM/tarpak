@@ -30,8 +30,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 13px;
+  padding-bottom: 12px;
 
   @include desktop {
     align-items: center;
@@ -47,6 +47,7 @@
   position: relative;
   z-index: 2;
   flex-shrink: 0;
+  margin: 0;
 
   @include tablet {
     width: 100px;
@@ -80,8 +81,8 @@
   left: 0;
   background-color: transparent;
   overflow-y: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   z-index: 1;
 
   @include tablet {

@@ -18,7 +18,11 @@
 }
 
 .advantages__item + .advantages__item {
-  margin-left: 30px;
+  margin-left: 15px;
+
+  @include tablet {
+    margin-left: 30px;
+  }
 }
 
 .advantages__img {
@@ -44,5 +48,7 @@
     right: 0;
     top: 0;
     z-index: 0;
+    opacity: 0.4;
+    border-radius: 0 8px 0 8px;
   }
 }

@@ -72,6 +72,10 @@
       padding-right: $padding-desktop-lg;
     }
   }
+
+  .page__block_scroll & {
+    padding-right: 0;
+  }
 }
 
 .pageHeader__toggle {
@@ -81,29 +85,31 @@
 }
 
 .page__block {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include tablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   &_gray {
     background-color: $additional-background;
   }
 
   &_target {
-    padding-top: 88px;
-    padding-bottom: 48px;
+    padding-top: 115px;
+    margin-top: -85px;
+    padding-bottom: 30px;
 
-    @include tablet {
+    @include desktop {
       padding-top: 118px;
       padding-bottom: 80px;
     }
-
-    @include tablet {
-      padding-top: 134px;
-    }
   }
 
-  &_first {
-    margin-top: 100vh;
+  &_pt_0 {
+    padding-top: 0;
   }
 }
 
@@ -112,15 +118,23 @@
 
   color: $color-brand;
   font-weight: 500;
+
+  font-size: 28px;
+  line-height: 32px;
+
+  font-family: $font-family-additional;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+
+  @include tablet {
+
   font-size: 35px;
   line-height: 45px;
-  letter-spacing: 3px;
-  text-align: center;
-  margin-bottom: 24px;
+  }
 }
 
 .page__blockBottom {
-  margin-top: 48px;
+  margin-top: 40px;
 
   &_center {
     @include tablet {

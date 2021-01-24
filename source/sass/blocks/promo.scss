@@ -41,10 +41,15 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 140px;
+  padding-top: 115px;
   padding-bottom: 35px;
   z-index: 1;
   width: 100%;
+
+  @include tablet {
+    padding-top: 140px;
+
+  }
 }
 
 .promo__img {
@@ -82,6 +87,34 @@
   }
 }
 
+.promo__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  line-height: 0;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all $transition-2;
+  z-index: 1;
+
+  background: center no-repeat url("/img/svg/arrow-rounded.svg");
+
+  @include desktop {
+    bottom: 30px;
+
+    &:hover,
+    &:focus {
+      transform: translateX(-50%) scale(1.2);
+    }
+  }
+}
+
 .promo__breadcrumbs {
 
   @include tablet {
@@ -103,19 +136,39 @@
 .promo__lid {
   @include style-reset;
 
+  display: none;
   color: rgba(#ffffff, 0.7);
   margin-bottom: 20px;
+  position: relative;
 
   @include tablet {
+    display: block;
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 35px;
+    
+    &::after {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 2px;
+      background-color: #ffffff;
+      opacity: 0.7;
+      position: absolute;
+      bottom: -10px;
+      left: -$padding-mobile;
+    }
   }
 
   @include desktop {
     font-size: 35px;
     line-height: 37px;
     margin-bottom: 55px;
+
+    &::after {
+      width: 140%;
+      left: 0;
+    }
   }
 }
 
@@ -123,13 +176,16 @@
   @include style-reset;
 
   color: #ffffff;
-  font-size: 35px;
+  font-size: 32px;
   line-height: 35px;
   margin-bottom: 32px;
 
   span {
     color: $color-accent;
-    display: block;
+
+    @include tablet {
+      display: block;
+    }
   }
 
   b {
@@ -170,6 +226,8 @@
 
   color: #ffffff;
   margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 20px;
 
   @include tablet {
     max-width: 70%;
@@ -185,6 +243,7 @@
 
 .promo__btnGroup {
   margin-top: auto;
+  margin-bottom: 50px;
 
   @include tablet {
     margin-top: 45px;

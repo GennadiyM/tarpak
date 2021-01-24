@@ -1,7 +1,6 @@
 .products .swiper-container {
   width: 100%;
   max-width: 956px;
-  margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,10 +42,12 @@
 
 .products__btn {
   display: none;
+  outline: none;
   
   @include desktop {
+    cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 195px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -57,9 +58,13 @@
     z-index: 3;
     padding: 0;
     background-color: #ffffff;
+    transition: opacity $transition-2;
+
+    &:hover {
+      opacity: 0.6;
+    }
 
     &_prev {
-      transform: translateY(-50%);
       left: $padding-desktop;
 
       svg {
@@ -68,7 +73,7 @@
     }
 
     &_next {
-      transform: translateY(-50%) rotate(180deg);
+      transform: rotate(180deg);
       right: $padding-desktop;
 
       svg {
