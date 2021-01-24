@@ -103,7 +103,7 @@
   transition: all $transition-2;
   z-index: 1;
 
-  background: center no-repeat url("/img/svg/arrow-rounded.svg");
+  background: center no-repeat url("../img/svg/arrow-rounded.svg");
 
   @include desktop {
     bottom: 30px;
