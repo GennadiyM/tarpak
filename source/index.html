@@ -400,26 +400,27 @@
         <p class="formBlock__title"><strong>Оптом выгоднее</strong></p>
       </div>
       <div class="formBlock__cell formBlock__cell_form">
-        <p class="formBlock__subTitle">Оставить заявку</p> 
-        <form class="formBlock__form form js-form" method="post" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
+        <p class="formBlock__subTitle">Оставить заявку</p>
+        <iframe style="display:none" name="formBlock__callback"></iframe>
+        <form class="formBlock__form form form_main js-form" method="post" target="formBlock__callback" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
           <div class="form__main">
             <input id="honeypot" type="text" name="honeypot" value="" class="visually-hidden">
             <label class="form__area formArea">
               <span class="formArea__label">Имя</span>
-              <input type="text" id="name" name="Имя" required>
+              <input type="text" id="name" name="Имя">
               <span class="formArea__error">Заполните поле</span>
             </label>
             <label class="form__area formArea">
               <span class="formArea__label">Телефон</span>
-              <input type="text" class="js-phone" name="Телефон" id="tel" required>
+              <input type="text" class="js-phone" name="Телефон" id="tel">
               <span class="formArea__error">Заполните поле</span>
             </label>
             <label class="form__area formArea">
               <span class="formArea__label">Email</span>
-              <input type="email" id="email" name="Email" required>
+              <input type="email" id="email" name="Email">
               <span class="formArea__error">Заполните поле</span>
             </label>
-            <button class="btn btn_full form__btn" type="submit">Отправить</button>
+            <button class="btn btn_full btn_white form__btn" type="submit">Отправить</button>
           </div>
           <div class="form__success">
             <p>Данные успено отправлены</p>
@@ -580,22 +581,22 @@
     <label class="form__area formArea formArea">
       <span class="formArea__label">Имя</span>
       <span class="formArea__slot">
-        <input class="formArea__input" type="text" required>
+        <input class="formArea__input" type="text">
         <span class="formArea__error">Заполните поле</span>
       </span>
     </label>
     <label class="form__area formArea formArea--smallLabel">
       <span class="formArea__label">Телефон</span>
       <span class="formArea__slot">
-        <input class="formArea__input js-phone" type="text" required>
-      <span class="formArea__error">Заполните поле</span>
+        <input class="formArea__input js-phone" type="text">
+        <span class="formArea__error">Заполните поле</span>
       </span>
     </label>
     <label class="form__area formArea formArea--smallLabel">
       <span class="formArea__label">Email</span>
       <span class="formArea__slot">
-        <input class="formArea__input" type="email" required>
-      <span class="formArea__error">Заполните поле</span>
+        <input class="formArea__input" type="email">
+        <span class="formArea__error">Заполните поле</span>
       </span>
     </label>
     <button class="form__btn btn btn--popup js-login-submit">Войти</button>
