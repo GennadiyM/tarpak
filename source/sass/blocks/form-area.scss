@@ -1,0 +1,40 @@
+.formArea {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 7px 15px 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: $color-text;
+    font-weight: 500;
+    min-height: 45px;
+    border: 1px solid $color-brand-main;
+  }
+
+  &_error {
+    input {
+      border-color: red;
+    }
+
+    .formArea__error {
+      display: block;
+    }
+  }
+}
+
+.formArea__label {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.formArea__error {
+  display: none;
+  color: red;
+  margin-bottom: -14px;
+  font-size: 14px;
+  line-height: 14px;
+}

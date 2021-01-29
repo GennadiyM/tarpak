@@ -1,0 +1,114 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 30px);
+  padding: 45px 16px 43px;
+  min-height: auto;
+  background-color: #ffffff;
+  border: 4px solid $color-brand;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+
+
+  @include tablet {
+    width: 678px;
+    padding: 56px 83px 59px 86px;
+  }
+
+  @include desktop {
+    width: 544px;
+    min-height: 493px;
+    
+    padding: 52px 57px 59px;
+  }
+}
+
+.popup--show {
+  display: block;
+}
+
+.popup__close {
+  @include style-reset;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 45px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity $transition-2;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $color-text;
+    transition: background-color $transition-2;
+    border-radius: 2px;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $color-text;
+
+    @include desktop {
+      background-color: $color-brand;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+
+    @include desktop {
+      opacity: 0.4;
+    }
+  }
+}
+
+.popup__logo {
+  width: 105px;
+  height: 50px;
+  margin-bottom: 38px;
+  margin-left: -2px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.popup__link {
+  display: none;
+
+  @include media(m) {
+    display: block;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: $color-text;
+    margin-top: 10px;
+  }
+}

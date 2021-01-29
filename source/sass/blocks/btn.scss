@@ -20,11 +20,20 @@
     padding-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
-
+    transition: opacity $transition-2;
     @include tablet {
         width: 300px;
         padding-left: 20px;
         padding-right: 20px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.4;
+        }
     }
 
     &_ghost {

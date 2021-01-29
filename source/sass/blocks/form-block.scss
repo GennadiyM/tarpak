@@ -1,0 +1,72 @@
+.formBlock {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.formBlock__cell {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  @include tablet {
+    width: 50%;
+  }
+}
+
+.formBlock__cell_form {
+  padding-top: 24px;
+  border-top: 1px solid white;
+
+  @include tablet {
+    border-top: none;
+    border-left: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+ .formBlock__title {
+  @include style-reset;
+  
+  line-height: 1.1;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-bottom: 24px;
+  
+   @include tablet {
+    font-size: 2rem;
+   }
+ }
+
+ .formBlock__subTitle {
+   @include style-reset;
+
+   color: #ffffff;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 22px;
+   margin-bottom: 24px;
+
+   @include tablet {
+     font-size: 24px;
+     line-height: 26px;
+   }
+ }
+
+ .formBlock__form {
+
+   @include tablet {
+    width: 100%;
+    max-width: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+ }
