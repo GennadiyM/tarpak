@@ -1,10 +1,16 @@
 .calculator {
-  width: 100%;
+  width: calc(100% - 20px);
+  margin-left: -20px;
   position: relative;
   background-color: #fff;
   font-family: "Roboto", "Arial", sans-serif;
   max-width: 900px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  @include desktop {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .calculator .hidden {
@@ -249,31 +255,6 @@
   flex-direction: column;
 }
 
-.calculator .twoBlocks .step_rightBlock input,
-.calculator .twoBlocks .step_rightBlock textarea {
-  border-radius: 6px;
-  padding: 8px 11px;
-  background-color: #eceff1;
-  border: 2px solid #eceff1;
-  color: #37474f;
-  width: 100%;
-  margin-right: 24px;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.calculator .twoBlocks .step_rightBlock input:focus,
-.calculator .twoBlocks .step_rightBlock textarea:focus {
-  background-color: #eff2f3 !important;
-  border: 2px solid #2196f3;
-  color: #37474f;
-  outline: 0;
-}
-
-.calculator .twoBlocks .step_rightBlock input {
-  margin-bottom: 24px;
-}
-
 .calculator .calc_nav {
   display: flex;
   justify-content: center;
@@ -302,21 +283,20 @@
 .calculator .calc_nav .calcButtonSubmit {
   border-radius: 60px;
   font-size: 19px;
-  padding-left: calc(19px * 1.7);
-  padding-right: calc(19px * 1.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   word-break: normal;
   display: inline-block;
   outline: 0;
   text-align: center;
-  max-width: 100%;
   letter-spacing: normal;
-  line-height: 2.5;
+  // line-height: 2.5;
   margin: 8px 0 6px 0;
-  padding: 0;
-  width: min-content;
   min-width: 122px;
   transition: .3s;
-  white-space: nowrap;
+  // white-space: nowrap;
   cursor: pointer;
   font-weight: 400;
   font-family: "Roboto", "Arial", sans-serif;

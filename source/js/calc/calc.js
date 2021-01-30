@@ -13,6 +13,10 @@ import $ from "jquery";
     const $input2 = $('input[name="step2radio"]');
     const $input3 = $('input[name="step3radio"]');
     
+    const $target1 = document.querySelector('#target-step1radio');
+    const $target2 = document.querySelector('#target-step2radio');
+    const $target3 = document.querySelector('#target-step3radio');
+
     const $step = $('.step');
     
     function from1stepto2() {
@@ -130,17 +134,22 @@ import $ from "jquery";
         $('.step1_block li').removeClass('mistake');
         $('.alert_message').addClass('hidden');
         $buttonNext.removeClass('alertBtn');
+        const value = $('input[name="step1radio"]:checked').val();
+        $target1.value = value;
     });
     
     $input2.change(function() {
         $('.step2_block li').removeClass('mistake');
         $('.alert_message').addClass('hidden');
         $buttonNext.removeClass('alertBtn');
+        const value = $('input[name="step2radio"]:checked').val();
+        $target2.value = value;
     });
     
     $input3.change(function() {
         $('.step3_block li').removeClass('mistake');
         $('.alert_message').addClass('hidden');
         $buttonNext.removeClass('alertBtn');
+        const value = $('input[name="step3radio"]:checked').val();
+        $target3.value = value;
     });
-

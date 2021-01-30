@@ -42,5 +42,9 @@
 }
 
 .big-bags__item + .big-bags__item {
-  margin-left: 10px;
+  margin-left: 25px;
+  
+  @include tablet {
+    margin-left: 10px;
+  }
 }

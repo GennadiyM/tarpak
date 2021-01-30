@@ -38,17 +38,6 @@
     -webkit-text-fill-color: #ffffff !important;
   }
 
-  //   &:hover {
-  //     border: 1px solid $color-brand-main;
-  //     box-shadow: inset -1px 1px 0 $color-brand-main, inset 1px -1px 0 $color-brand-main;
-  //   }
-
-  //   &:focus {
-  //     border: 1px solid $color-accent;
-  //     box-shadow: inset -1px 1px 0 $color-accent, inset 1px -1px 0 $color-accent;
-  //   }
-  // }
-
   &_error {
     input {
       border: 1px solid #ff6955;
@@ -60,7 +49,10 @@
       text-align: right;
     }
   }
-    
+  
+  &_textarea {
+    margin-top: 25px;
+  }
 }
 
 .formArea__label {
@@ -89,6 +81,7 @@
 
     &:hover,
     &:focus {
+      color: $color-text;
       border-color: $color-brand;
     }
 
@@ -115,4 +108,54 @@
   input {
     border: 1px solid #ff6955;
   }
+}
+
+.formArea_calc {
+  .formArea__label {
+    color: #37474f;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    color: #37474f;
+    border: 1px solid $color-input-border;
+    background-color: $additional-background;
+
+    &:hover,
+    &:focus {
+      color: #37474f;
+      border: 1px solid #2196f3;
+    }
+
+    &::placeholder {
+      opacity: 1;
+      color: $color-placehholder;
+    }
+  }
+
+  textarea {
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 11px 11px;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+      -webkit-box-shadow: 0 0 0 30px $additional-background inset !important;
+  }
+
+  input:-webkit-autofill {
+    -webkit-text-fill-color: $color-text !important;
+  }
+}
+
+.formArea_calc input:focus,
+.formArea_calc textarea:focus {
+  background-color: #eff2f3 !important;
+  border: 1px solid #2196f3;
+  color: #37474f;
+  outline: 0;
 }

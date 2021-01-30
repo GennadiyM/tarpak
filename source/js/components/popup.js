@@ -24,6 +24,7 @@ const popup = function () {
   const btnClosePopup = popup.querySelector(Selector.BTN_CLOSE_POPUP);
   const inputName = popup.querySelector(`#name-p`);
   const overlay = page.querySelector(Selector.OVERLAY);
+  const inputTarget = popup.querySelector(`#target`);
 
   const getClosePopup = function (evt) {
     evt.preventDefault();
@@ -40,6 +41,12 @@ const popup = function () {
 
   const onClickBtnShowPopup = function (evt) {
     evt.preventDefault();
+    if (evt.target.dataset.target) {
+      const target = evt.target.dataset.target;
+      if (inputTarget) {
+        inputTarget.value = target;
+      }
+    }
 
     btnOpenPopup.forEach((btn) => {
       btn.removeEventListener(`click`, onClickBtnShowPopup);
@@ -57,6 +64,10 @@ const popup = function () {
   const onClosePopup = function (evt) {
     evt.preventDefault();
     getClosePopup(evt);
+
+    if (inputTarget) {
+      inputTarget.value = ``;
+    }
   };
 
   const onWindowKeydown = function (evt) {

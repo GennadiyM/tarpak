@@ -121,6 +121,12 @@
       fill: $color-brand;
     }
   }
+
+  .pageHeader_inner & {
+    svg {
+      fill: $color-brand;
+    }
+  }
 }
 
 .telGroup__item {

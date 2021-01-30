@@ -27,23 +27,6 @@
         padding-left: 20px;
         padding-right: 20px;
        
-        &:hover {
-            cursor: pointer;
-            opacity: 0.8;
-            color: $color-brand-main;
-            border-color: $color-brand-main;
-        }
-
-        &:active {
-            opacity: 0.4;
-        }
-    }
-
-    &_ghost {
-        background-color: transparent;
-        color: #ffffff;
-        border-color: #ffffff;
-
         @include tablet {
             &:hover {
                 opacity: 1;
@@ -56,6 +39,12 @@
                 opacity: 0.4;
             }
         }
+    }
+
+    &_ghost {
+        background-color: transparent;
+        color: #ffffff;
+        border-color: #ffffff;
      }
  
      &_white {

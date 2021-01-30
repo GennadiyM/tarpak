@@ -192,7 +192,7 @@
         </li>
       </ul>
 
-      <form class="calculator" id="calculator">
+      <div class="calculator" id="calculator">
   
         <div class="progress_bar">
             <div class="progress_dinamic"></div>
@@ -377,10 +377,42 @@
                 </div>
                 <div class="step_rightBlock">
                     <h3>Ваши контакты</h3>
-                    <input type="text" name="calc_name" id="name" placeholder="Ваше имя">
-                    <input type="tel" name="calc_phone" id="phone" placeholder="+7 (___) ___-__-__">
-                    <input type="email" name="calc_email" id="email" placeholder="Введите e-mail">
-                    <textarea name="calc_comment" id="comment" cols="30" rows="3" placeholder="Ваш комментарий"></textarea>
+                    <iframe style="display:none" name="formBlock__callback"></iframe>
+                    <form class="form form_calc js-form" id="constructor" method="post" target="formBlock__callback" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
+                      <div class="form__main">
+                        <input id="honeypot-p" type="text" name="honeypot" value="" class="visually-hidden">
+                        <label class="form__area formArea formArea_calc">
+                          <span class="formArea__label">Имя</span>
+                          <input type="text" id="name-p" name="Имя" placeholder="Ваше имя">
+                          <span class="formArea__error">Заполните поле</span>
+                        </label>
+                        <label class="form__area formArea formArea_calc">
+                          <span class="formArea__label">Телефон</span>
+                          <input type="text" class="js-phone" name="Телефон" id="tel-p" placeholder="+7 (999) 999 99 99">
+                          <span class="formArea__error">Заполните поле</span>
+                        </label>
+                        <label class="form__area formArea formArea_calc">
+                          <span class="formArea__label">Email</span>
+                          <input type="email" id="email-p" name="Email" placeholder="example@mail.ru">
+                          <span class="formArea__error">Заполните поле</span>
+                        </label>
+                        <input id="target" type="text" name="Формат" value="Конструктор" class="visually-hidden">
+                        <input id="target-step1radio" type="text" name="Стропа" value="" class="visually-hidden">
+                        <input id="target-step2radio" type="text" name="Верх" value="" class="visually-hidden">
+                        <input id="target-step3radio" type="text" name="Низ" value="" class="visually-hidden">
+
+                        <label class="form__area formArea formArea_textarea formArea_calc">
+                          <span class="formArea__label">Ваш комментарий</span>
+                          <textarea name="Сообщение" id="comment" cols="30" rows="3" placeholder="Ваш комментарий"></textarea>
+                        </label>
+                      </div>
+                      <div class="form__success">
+                        <svg width="80px" height="80px">
+                          <use xlink:href="#icon-form-ok"></use>
+                        </svg>
+                        <p>Спасибо за Ваше обращение. <br>Оно успешно отправлено.</p>
+                      </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -400,20 +432,19 @@
                   <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
                 </svg>
             </button>
-            <button id="calcButtonSubmit" type="submit" class="calcButtonSubmit hidden">Оставить заявку</button>
+            <button id="calcButtonSubmit" type="submit" form="constructor" class="calcButtonSubmit hidden">Оставить заявку</button>
             <button id="calcButtonSuccess" type="button" class="calcButtonSuccess hidden">назад</button>
         </nav>
     
         <div class="accept_block hidden">
           <p class="accept-text">Нажимая на кнопку, я соглашаюсь на обработку персональных данных</p>
         </div>
-    </form>
+      </div>
     </div>
   </section>
 </main>
 <footer class="page__footer pageFooter" id="contacts">
   <div class="page__container">
-
     <div class="pageFooter__row">
       <div class="pageFooter__block">
         <h2 class="pageFooter__blockTitle">Продукция:</h2>
