@@ -104,7 +104,8 @@
   }
 }
 
-.formArea_gray.formArea_error {
+.formArea_gray.formArea_error,
+.formArea_calc.formArea_error {
   input {
     border: 1px solid #ff6955;
   }
