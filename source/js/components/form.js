@@ -51,7 +51,7 @@ const form = function () {
         window.setTimeout(function() {
             if (!popup) {
                 if (targetForm.classList.contains(`form_calc`)) {
-                    window.location.href = "https://tarpak.ru/" 
+                    // window.location.href = "https://tarpak.ru/" 
                 }
                 return;
             } else {
