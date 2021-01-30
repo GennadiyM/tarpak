@@ -59,7 +59,7 @@ import $ from "jquery";
         const $input2 = $('input[name="step2radio"]:checked').attr('data-value');
         const $input3 = $('input[name="step3radio"]:checked').attr('data-value');
     
-        $('.illustration').attr('src', 'img/constructor/1-' + $input1 + '_2-' + $input2 + '_3-' + $input3 + '.svg');
+        $('.illustration').attr('src', '/img/constructor/1-' + $input1 + '_2-' + $input2 + '_3-' + $input3 + '.svg');
     
     }
     
