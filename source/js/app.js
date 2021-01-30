@@ -7,8 +7,10 @@ import headerScroll from './components/header.js';
 import products from './components/products.js';
 import phone from './components/tel.js';
 import form from './components/form.js';
+import popup from './components/popup.js';
 
 window.onload = function () {
+  popup();
   firstBlock();
   menu();
   headerScroll();

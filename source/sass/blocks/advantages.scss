@@ -26,8 +26,8 @@
 }
 
 .advantages__img {
-  width: 115px;
-  height: 115px;
+  width: 100px;
+  height: 90px;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -40,8 +40,8 @@
 
   &::after {
     display: block;
-    width: 95px;
-    height: 95px;
+    width: 65px;
+    height: 65px;
     background-color: $additional-background;
     content: "";
     position: absolute;

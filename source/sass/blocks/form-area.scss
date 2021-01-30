@@ -5,24 +5,62 @@
 
   input {
     width: 100%;
-    padding: 7px 15px 5px;
-    border-radius: 8px;
+    padding: 12px 11px 11px;
+    
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid $color-input-border;
+    border-radius: 4px;
     font-size: 16px;
-    color: $color-text;
-    font-weight: 500;
-    min-height: 45px;
-    border: 1px solid $color-brand-main;
+    transition: border-color $transition-2;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      border-color: $color-accent;
+      background: transparent;
+    }
+
+    &::placeholder {
+      opacity: 1;
+      color: #ffffff;
+    }
   }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+      -webkit-box-shadow: 0 0 0 30px $color-brand inset !important;
+  }
+
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  //   &:hover {
+  //     border: 1px solid $color-brand-main;
+  //     box-shadow: inset -1px 1px 0 $color-brand-main, inset 1px -1px 0 $color-brand-main;
+  //   }
+
+  //   &:focus {
+  //     border: 1px solid $color-accent;
+  //     box-shadow: inset -1px 1px 0 $color-accent, inset 1px -1px 0 $color-accent;
+  //   }
+  // }
 
   &_error {
     input {
-      border-color: red;
+      border: 1px solid #ff6955;
     }
+
 
     .formArea__error {
       display: block;
+      text-align: right;
     }
   }
+    
 }
 
 .formArea__label {
@@ -33,8 +71,48 @@
 
 .formArea__error {
   display: none;
-  color: red;
+  color: #ff6955;
   margin-bottom: -14px;
   font-size: 14px;
   line-height: 14px;
+}
+
+.formArea_gray {
+  .formArea__label {
+    color: $color-brand-main;
+  }
+
+  input {
+    color: $color-text;
+    border: 1px solid $color-input-border;
+    background-color: $additional-background;
+
+    &:hover,
+    &:focus {
+      border-color: $color-brand;
+    }
+
+    &::placeholder {
+      opacity: 1;
+      color: $color-placehholder;
+    }
+  }
+
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+      -webkit-box-shadow: 0 0 0 30px $additional-background inset !important;
+  }
+
+  input:-webkit-autofill {
+    -webkit-text-fill-color: $color-text !important;
+  }
+}
+
+.formArea_gray.formArea_error {
+  input {
+    border: 1px solid #ff6955;
+  }
 }

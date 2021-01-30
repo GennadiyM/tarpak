@@ -5,6 +5,7 @@ const form = function () {
         return;
     }
 
+
     const onInputs = (evt) => {
         evt.target.closest(`.formArea`).classList.remove(`formArea_error`);
         evt.target.closest(`.form`).classList.remove(`error`);
@@ -13,7 +14,8 @@ const form = function () {
     const onFormSubmit = (evt) => {
         const targetForm = evt.target;
         const honeypot = targetForm.querySelector(`[name="honeypot"]`);
-        
+        const popup = targetForm.closest(`.js-popup`);
+
         if (honeypot.value) {
             evt.preventDefault();
             return;
@@ -45,6 +47,14 @@ const form = function () {
         }
 
         targetForm.classList.add(`form_success`);
+
+        window.setTimeout(function() {
+            if (!popup) {
+                return;
+            }
+            popup.querySelector('.js-close').click();
+            targetForm.classList.remove(`form_success`);
+        }, 1000);
     }
 
     forms.forEach((item) => {

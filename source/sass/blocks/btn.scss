@@ -20,15 +20,18 @@
     padding-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
-    transition: opacity $transition-2;
+    transition: all $transition-2;
+    
     @include tablet {
         width: 300px;
         padding-left: 20px;
         padding-right: 20px;
-
+       
         &:hover {
             cursor: pointer;
             opacity: 0.8;
+            color: $color-brand-main;
+            border-color: $color-brand-main;
         }
 
         &:active {
@@ -39,7 +42,20 @@
     &_ghost {
         background-color: transparent;
         color: #ffffff;
-        border-color: #ffffff; 
+        border-color: #ffffff;
+
+        @include tablet {
+            &:hover {
+                opacity: 1;
+                background-color: $color-accent;
+                color: $color-brand;
+                border-color: $color-brand;
+            }
+
+            &:active {
+                opacity: 0.4;
+            }
+        }
      }
  
      &_white {
@@ -49,6 +65,20 @@
      &_full {
          @include tablet {
              width: 100%;
+         }
+     }
+
+     &_primary {
+         background-color: $color-brand;
+         color: #ffffff;
+         border: 1px solid $color-brand;
+
+         @include tablet {
+             &:hover,
+             &:focus {
+                 color: $color-brand;
+                 background-color: $color-accent;
+             }
          }
      }
 }

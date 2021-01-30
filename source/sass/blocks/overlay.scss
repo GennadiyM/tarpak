@@ -9,4 +9,8 @@
   overflow: auto;
   background-color: rgba(36,75,168,.95);
   transition: opacity .2s;
+
+  &_show {
+    display: block;
+  }
 }
