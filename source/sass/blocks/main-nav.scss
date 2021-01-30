@@ -47,6 +47,11 @@
 .pageHeader_inner .mainNav__link,
 .pageHeader_scroll .mainNav__link {
   @include tablet {
+    @include hover;
     color: $color-brand;
+
+    &:focus {
+      color: $color-accent;
+    }
   }
 }

@@ -63,12 +63,16 @@
 
     .pageHeader_inner & {
       color: $color-brand;
+    }
   }
 
-    @include hover;
-
-    &:focus {
-      color: $color-accent;
+  &[href] {
+    @include tablet {
+      @include hover;
+  
+      &:focus {
+        color: $color-accent;
+      }
     }
   }
 

@@ -22,6 +22,7 @@ var svgstore = require('gulp-svgstore');
 // html
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
+var htmlmin = require('gulp-htmlmin');
 
 // js
 var webpack = require('webpack-stream');
@@ -173,5 +174,11 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js', 'vendor', 'calc'));
+gulp.task('minify', () => {
+  return gulp.src('build/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js', 'vendor', 'calc', 'minify'));
 gulp.task('start', gulp.series('build', 'server'));
