@@ -50,11 +50,15 @@ const form = function () {
 
         window.setTimeout(function() {
             if (!popup) {
+                if (targetForm.classList.contains(`form_calc`)) {
+                    window.location.href = "https://tarpak.ru/" 
+                }
                 return;
+            } else {
+                popup.querySelector('.js-close').click();
+                targetForm.classList.remove(`form_success`);
             }
-            popup.querySelector('.js-close').click();
-            targetForm.classList.remove(`form_success`);
-        }, 1000);
+        }, 1500);
     }
 
     forms.forEach((item) => {
