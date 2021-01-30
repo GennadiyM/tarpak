@@ -155,7 +155,10 @@
 
   h1, h2 {
     @include style-reset;
+
     color: $color-brand;
+    font-size: 24px;
+    line-height: 26px;
   }
 }
 
