@@ -209,8 +209,7 @@
         </li>
       </ul>
       <h1 class="promo__title"><b>Тарпак</b> производитель надежных и качественных контейнеров Биг-бэг</h1>
-      <p class="promo__desc"><b>Тарпак</b> реализует контейнеры биг-бэг оптом и в розницу. Мы принимаем заказы на изготовление биг-бэгов по индивидуальным размерам заказчика. Основная цель нашей деятельности – производство максимального ассортимента высококачественной полимерной упаковочной продукции.</p>
-      
+      <p class="promo__desc"><b>Тарпак</b> реализует контейнеры биг-бэг оптом и в розницу. Мы принимаем заказы на изготовление биг-бэгов по индивидуальным размерам заказчика. Основная цель нашей деятельности – производство максимального ассортимента высококачественной полимерной упаковочной продукции.</p> 
     </div>
     <div class="promo__img">
       <picture>
@@ -222,8 +221,9 @@
         <img src="img/promo/promo-4.jpg" srcset="img/promo/promo-4.jpg 1x, img/promo/promo-4@2x.jpg 2x" alt="Производство биг-бэгов" title="Производство биг-бэгов">
       </picture>
     </div>
+    <a href="#start" class="promo__link" aria-label="Перейти к основному содержанию"></a>  
   </section>
-  <section class="pageGrid">
+  <section class="pageGrid pageGrid_target" id="start">
     <div class="pageGrid__layout">
       <div class="pageGrid__wrapper">
         <div class="pageGrid__main">
@@ -311,16 +311,6 @@
               <li>Мы проходим государственную сертификацию на соответствие всем санитарным нормам, требованиям ГОСТ и ISO.</li>
             </ul>
           </div>
-          <div class="pageGrid__footer">
-            <button class="btn btn_white" type="button">
-              <span class="btn__icon">
-                <svg width="37px" height="34px">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
-              </span>
-              <span class="btn__text">Оставить заявку</span>
-            </button>
-          </div>
         </div>
         <div class="pageGrid__saidbar">
           <div class="pageGrid__saidbarHeader">
@@ -367,7 +357,44 @@
 
     </div>
   </section>
-  
+  <div class="page__block page__block_blue">
+    <div class="page__container formBlock">
+      <div class="formBlock__cell">
+        <p class="formBlock__title"><strong>Оптом выгоднее</strong></p>
+      </div>
+      <div class="formBlock__cell formBlock__cell_form">
+        <p class="formBlock__subTitle">Оставить заявку</p>
+        <iframe style="display:none" name="formBlock__callback"></iframe>
+        <form class="formBlock__form form js-form" method="post" target="formBlock__callback" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
+          <div class="form__main">
+            <input id="honeypot" type="text" name="honeypot" value="" class="visually-hidden">
+            <label class="form__area formArea">
+              <span class="formArea__label">Имя</span>
+              <input type="text" id="name" name="Имя" placeholder="Ваше имя">
+              <span class="formArea__error">Заполните поле</span>
+            </label>
+            <label class="form__area formArea">
+              <span class="formArea__label">Телефон</span>
+              <input type="text" class="js-phone" name="Телефон" id="tel" placeholder="+7 (999) 999 99 99">
+              <span class="formArea__error">Заполните поле</span>
+            </label>
+            <label class="form__area formArea">
+              <span class="formArea__label">Email</span>
+              <input type="email" id="email" name="Email" placeholder="example@mail.ru">
+              <span class="formArea__error">Заполните поле</span>
+            </label>
+            <button class="btn btn_full btn_white form__btn" type="submit">Отправить</button>
+          </div>
+          <div class="form__success">
+            <svg width="80px" height="80px">
+              <use xlink:href="#icon-form-ok"></use>
+            </svg>
+            <p>Спасибо за Ваше обращение. <br>Оно успешно отправлено.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 

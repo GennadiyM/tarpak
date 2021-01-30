@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom:24px;
 
   img {
     max-height: 100%;
@@ -19,6 +19,9 @@
 
 .big-bag__title {
   @include style-reset;
+
+  margin-bottom: 16px;
+  
 }
 
 .big-bag__content {
@@ -29,4 +32,11 @@
 
 .big-bag__btn {
   margin-top: auto;
+}
+
+
+.big-bag__text {
+  @include style-reset;
+
+  margin-bottom: 24px;
 }

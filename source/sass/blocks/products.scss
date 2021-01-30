@@ -33,7 +33,7 @@
 }
 
 .products__swiper-pagination.swiper-pagination-bullets {
-  bottom: 0;
+  bottom: 2px;
 
   @include desktop {
     display: none;
