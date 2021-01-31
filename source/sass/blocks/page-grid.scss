@@ -181,6 +181,12 @@
 }
 
 .pageGrid__saidbar_pic {
+  padding: 0 0 40px 0;
+
+  @include tablet {
+    padding: 40px 15px;
+  }
+
   .pageGrid__sidebarBox {
     width: 100%;
     display: flex;

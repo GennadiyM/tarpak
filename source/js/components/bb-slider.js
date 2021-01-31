@@ -4,7 +4,7 @@ var bb = function () {
   var Selector = {
     BB: '.js-bb',
     BB_SLIDER: '.swiper-container',
-    SWIPER_PAGINATION: '.products__swiper-pagination',
+    SWIPER_PAGINATION: '.bb-slider__swiper-pagination',
     nextEl: '.bb-slider__btn_prev',
     prevEl: '.bb-slider__btn_next',
   };

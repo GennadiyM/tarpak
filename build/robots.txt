@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: */big-begi/oni-line/*
+Disallow: */big-begi/three-line-dashes/*
+Disallow: */big-begi/two-line/*
+Disallow: */big-begi/meshki/*
+Disallow: */big-begi/plenka/*
+Disallow: */big-begi/setka/*
+
+Sitemap: https://tarpak.ru/sitemap.xml
