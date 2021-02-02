@@ -34,8 +34,8 @@
   <meta name="HandheldFriendly" content="True">
 
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:url" content="https://tarkpak.ru/">
-  <meta property="og:site_name" content="Osome">
+  <meta property="og:url" content="https://tarkpak.ru/setka/">
+  <meta property="og:site_name" content="Тарпак">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Овощная сетка">
   <meta property="og:description" content="Овощная сетка в Москве. Купить овощную сетку в Санкт-Петербурге, Екатеринбурге, Москве и в Московской области.">
@@ -47,7 +47,7 @@
   <meta name="twitter:title" content="Овощная сетка">
   <meta name="twitter:description" content="Овощная сетка в Москве. Купить овощную сетку в Санкт-Петербурге, Екатеринбурге, Москве и в Московской области.">
   <meta name="twitter:image:src" content="https://tarkpak.ru/img/covers/main.jpg">
-  <meta name="twitter:url" content="https://tarkpak.ru/">
+  <meta name="twitter:url" content="https://tarkpak.ru/setka/">
   <meta name="twitter:domain" content="https://tarkpak.ru/">
 
   <link rel="preload" href="/fonts/roboto-bold.woff2" as="font" type="font/woff2" crossorigin>
@@ -86,7 +86,7 @@
             </a>
           </li>
           <li class="mainNav__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="#contacts" class="mainNav__link" itemprop="url">
+            <a href="/address/" class="mainNav__link" itemprop="url">
               <span itemprop="name">Контакты</span>
             </a>
           </li>
@@ -222,9 +222,31 @@
     <div class="pageGrid__layout pageGrid__layout_decor">
       <div class="pageGrid__wrapper">
         <div class="pageGrid__main">
-          <div class="jobs">
-            <p class="jobs__title">Технические работы</p>
-            <p class="jobs__subtitle">Приносим свои извенения за предоставленные неудобства. Вы можете заполнить форму ниже и мы свяжемся с Вами в ближайшее время.</p>
+          <div class="pageGrid__header">
+            <h2>Основная информация</h2>
+          </div>
+          <div class="pageGrid__content">
+            <div class="pageGrid__row">
+              <p><b>Сетка упаковочная</b> предназначена для транспортировки и последующего хранения овощей. Упаковочная овощная сетка представлена двумя основными размерами - 50х80 см и 45х75 см.</p>
+              <p>Возможно изготовление и поставка овощной сетки любого цвета, но обычно овощная сетка для картофеля&nbsp;- это сетка фиолетового или красного цветов, сетка для капусты - зеленая, сетка для лука, моркови, свеклы&nbsp;- красная.</p>
+              <p>Купить овощную сетку&nbsp;оптом и в розницу в нашей компании - просто!&nbsp;Достаточно оставить заявку, либо позвонить на любой удобный для Вас номер.</p>
+              </div>
+          </div>
+        </div>
+        <div class="pageGrid__saidbar pageGrid__saidbar_no-border pageGrid__saidbar_pic">
+          <div class="pageGrid__sidebarBox center">
+              <picture>
+                <source type="image/webp" srcset="/img/catalog/setka.webp 1x, /img/catalog/setka@2x.webp 2x">
+                <img src="/img/catalog/setka.png" srcset="/img/catalog/setka.png 1x, /img/catalog/setka@2x.png 2x" width="400" height="380" alt="Сетка офощная" title="Купить овощную сетку в Москве и Екатеринбурге">
+              </picture>
+              <button class="btn btn_white js-btn" type="button">
+                <span class="btn__icon">
+                  <svg width="37px" height="34px">
+                    <use xlink:href="#icon-email"></use>
+                  </svg>
+                </span>
+                <span class="btn__text">Оставить заявку</span>
+              </button>
           </div>
         </div>
       </div>
@@ -256,6 +278,7 @@
               <input type="email" id="email" name="Email" placeholder="example@mail.ru">
               <span class="formArea__error">Заполните поле</span>
             </label>
+            <input id="target" type="text" name="Формат" value="Овощная сетка" class="visually-hidden">
             <button class="btn btn_full btn_white form__btn" type="submit">Отправить</button>
           </div>
           <div class="form__success">
@@ -418,8 +441,8 @@
       <img src="/img/logo/logo-mob.png" srcset="/img/logo/logo.png 1x, /img/logo/logo-mob@2x.png 2x" width="105" height="50" alt="Тарпак" title="Тарпак">
     </picture>
   </div>
-  <iframe style="display:none" name="formBlock__callback"></iframe>
-  <form class="form form_popup js-form" method="post" target="formBlock__callback" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
+  <iframe style="display:none" name="popup"></iframe>
+  <form class="form form_popup js-form" method="post" target="popup" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
     <div class="form__main">
       <input id="honeypot-p" type="text" name="honeypot" value="" class="visually-hidden">
       <label class="form__area formArea formArea_gray">
@@ -437,7 +460,7 @@
         <input type="email" id="email-p" name="Email" placeholder="example@mail.ru">
         <span class="formArea__error">Заполните поле</span>
       </label>
-      <input id="target" type="text" name="Формат" value="" class="visually-hidden">
+      <input id="target" type="text" name="Формат" value="Овощная сетка" class="visually-hidden">
       <button class="btn btn_full btn_primary form__btn" type="submit">Отправить</button>
     </div>
     <div class="form__success">
@@ -447,7 +470,7 @@
       <p>Спасибо за Ваше обращение. <br>Оно успешно отправлено.</p>
     </div>
   </form>
-</div>  
+</div>
 <div class="overlay js-overlay"></div>
 <script src="/js/app.js"></script>
 </html>

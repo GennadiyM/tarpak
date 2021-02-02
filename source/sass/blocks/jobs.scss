@@ -9,5 +9,9 @@
 .jobs__title {
   font-size: 35px;
   font-weight: 700;
-  
+
+  &_404 {
+    color: red;
+    font-size: 80px;
+  }
 }

@@ -34,7 +34,7 @@
 
   <meta property="og:locale" content="ru_RU">
   <meta property="og:url" content="https://tarkpak.ru/">
-  <meta property="og:site_name" content="Osome">
+  <meta property="og:site_name" content="Тарпак">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Биг бэги, полипропиленовые мешки от производителя по лучшим ценам, г. Москва, г. Екатеринбург. Тарпак">
   <meta property="og:description" content="&quot;Тарпак&quot; - это высокотехнологичное оборудование, лучшие импортные материалы, эффективная логистическая система и многолетний опыт! Тарпак производит полипропиленовые мешки и мягкие полипропиленовые контейнеры (биг-бэги).">
@@ -83,7 +83,7 @@
             </a>
           </li>
           <li class="mainNav__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="#contacts" class="mainNav__link" itemprop="url">
+            <a href="/address/" class="mainNav__link" itemprop="url">
               <span itemprop="name">Контакты</span>
             </a>
           </li>
@@ -356,7 +356,7 @@
 
 
       <div class="page__blockBottom page__blockBottom_center">
-        <button class="btn btn_white js-btn" type="button">
+        <button class="btn btn_white js-btn" type="button" data-target="Главная">
           <span class="btn__icon">
             <svg width="37px" height="34px">
               <use xlink:href="#icon-email"></use>
@@ -443,6 +443,7 @@
               <input type="email" id="email" name="Email" placeholder="example@mail.ru">
               <span class="formArea__error">Заполните поле</span>
             </label>
+            <input id="target" type="text" name="Формат" value="Главная" class="visually-hidden">
             <button class="btn btn_full btn_white form__btn" type="submit">Отправить</button>
           </div>
           <div class="form__success">
@@ -605,8 +606,8 @@
       <img src="img/logo/logo-mob.png" srcset="img/logo/logo.png 1x, img/logo/logo-mob@2x.png 2x" width="105" height="50" alt="Тарпак" title="Тарпак">
     </picture>
   </div>
-  <iframe style="display:none" name="formBlock__callback"></iframe>
-  <form class="form form_popup js-form" method="post" target="formBlock__callback" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
+  <iframe style="display:none" name="popup"></iframe>
+  <form class="form form_popup js-form" method="post" target="popup" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
     <div class="form__main">
       <label for="honeypot-p" class="visually-hidden">Боченок меда</label>
       <input id="honeypot-p" type="text" name="honeypot" value="" class="visually-hidden">
@@ -625,6 +626,7 @@
         <input type="email" id="email-p" name="Email" placeholder="example@mail.ru">
         <span class="formArea__error">Заполните поле</span>
       </label>
+      <input id="target" type="text" name="Формат" value="Главная" class="visually-hidden">
       <button class="btn btn_full btn_primary form__btn" type="submit">Отправить</button>
     </div>
     <div class="form__success">

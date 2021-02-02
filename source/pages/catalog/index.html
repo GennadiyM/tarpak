@@ -34,8 +34,8 @@
   <meta name="HandheldFriendly" content="True">
 
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:url" content="https://tarkpak.ru/">
-  <meta property="og:site_name" content="Osome">
+  <meta property="og:url" content="https://tarkpak.ru/catalog/">
+  <meta property="og:site_name" content="Тарпак">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Каталог продукции: биг-бэги, полипропиленовые мешки, стрейч пленка.">
   <meta property="og:description" content="Компания Тарпак производит высококачественные мешки биг-бэг, полипропиленовые мешки, стрейч пленку, овощную сетку, перчатки хб">
@@ -47,7 +47,7 @@
   <meta name="twitter:title" content="Каталог продукции: биг-бэги, полипропиленовые мешки, стрейч пленка.">
   <meta name="twitter:description" content="Компания Тарпак производит высококачественные мешки биг-бэг, полипропиленовые мешки, стрейч пленку, овощную сетку, перчатки хб">
   <meta name="twitter:image:src" content="https://tarkpak.ru/img/covers/main.jpg">
-  <meta name="twitter:url" content="https://tarkpak.ru/">
+  <meta name="twitter:url" content="https://tarkpak.ru/catalog/">
   <meta name="twitter:domain" content="https://tarkpak.ru/">
 
   <link rel="preload" href="/fonts/roboto-bold.woff2" as="font" type="font/woff2" crossorigin>
@@ -86,7 +86,7 @@
             </a>
           </li>
           <li class="mainNav__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-            <a href="#contacts" class="mainNav__link" itemprop="url">
+            <a href="/address/" class="mainNav__link" itemprop="url">
               <span itemprop="name">Контакты</span>
             </a>
           </li>
@@ -265,7 +265,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a class="product" href="perchatki">
+                <a class="product" href="/perchatki/">
                   <div class="product__img">
                     <picture>
                       <source type="image/webp" srcset="/img/products/gloves.webp 1x, /img/products/gloves@2x.webp 2x">
@@ -278,7 +278,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a class="product" href="#nowhere">
+                <a class="product" href="/setka/">
                   <div class="product__img">
                     <picture>
                       <source type="image/webp" srcset="/img/products/grid.webp 1x, /img/products/grid@2x.webp 2x">
@@ -303,8 +303,6 @@
               <use xlink:href="#icon-arrow-slider"></use>
             </svg>
           </button>
-    
-    
           <div class="page__blockBottom page__blockBottom_center">
             <button class="btn btn_white js-btn" type="button">
               <span class="btn__icon">
@@ -468,8 +466,8 @@
       <img src="/img/logo/logo-mob.png" srcset="/img/logo/logo.png 1x, /img/logo/logo-mob@2x.png 2x" width="105" height="50" alt="Тарпак" title="Тарпак">
     </picture>
   </div>
-  <iframe style="display:none" name="formBlock__callback"></iframe>
-  <form class="form form_popup js-form" method="post" target="formBlock__callback" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
+  <iframe style="display:none" name="popup"></iframe>
+  <form class="form form_popup js-form" method="post" target="popup" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
     <div class="form__main">
       <label for="honeypot-p" class="visually-hidden">Боченок меда</label>
       <input id="honeypot-p" type="text" name="honeypot" value="" class="visually-hidden">
@@ -488,6 +486,7 @@
         <input type="email" id="email-p" name="Email" placeholder="example@mail.ru">
         <span class="formArea__error">Заполните поле</span>
       </label>
+      <input id="target" type="text" name="Формат" value="Каталог" class="visually-hidden">
       <button class="btn btn_full btn_primary form__btn" type="submit">Отправить</button>
     </div>
     <div class="form__success">

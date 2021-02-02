@@ -1,0 +1,53 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.coctacts__tel {
+  @include list-reset;
+
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-brand;
+
+    @include tablet {
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.contacts__name {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.contacts__row {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &:last-child {
+    border: none;
+  }
+
+  .badge + .badge {
+    margin-top: 5px;
+  }
+}

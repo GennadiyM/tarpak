@@ -1,4 +1,5 @@
 User-agent: *
+Host: https//tarpak.ru
 
 Disallow: */big-begi/oni-line/*
 Disallow: */big-begi/three-line-dashes/*
@@ -6,5 +7,7 @@ Disallow: */big-begi/two-line/*
 Disallow: */big-begi/meshki/*
 Disallow: */big-begi/plenka/*
 Disallow: */big-begi/setka/*
+Disallow: */big-begi/perchatki/*
+Disallow: */errors/*
 
 Sitemap: https://tarpak.ru/sitemap.xml
