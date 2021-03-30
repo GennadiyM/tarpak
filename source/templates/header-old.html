@@ -1,0 +1,129 @@
+<header class="page__header pageHeader js-header">
+  <div class="pageHeader__container page__container">
+    <a href="/" class="pageHeader__logo">
+      <picture>
+        <source type="image/webp" srcset="/img/logo/logo-mob.webp 1x, /img/logo/logo-mob@2x.webp 2x">
+        <img src="/img/logo/logo-mob.png" srcset="/img/logo/logo.png 1x, /img/logo/logo-mob@2x.png 2x" alt="Тарпак" title="Тарпак">
+      </picture>
+    </a>
+    <div class="pageHeader__dropdown">
+      <nav class="pageHeader__mainNav mainNav">
+        <ul class="mainNav__list">
+          <li class="mainNav__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+            <a href="/o_kompanii/" class="mainNav__link" itemprop="url">
+              <span itemprop="name">О компании</span>
+            </a>
+          </li>
+          <li class="mainNav__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+            <a href="/config/" class="mainNav__link" itemprop="url">
+              <span itemprop="name">Конструктор биг-бэга</span>
+            </a>
+          </li>
+          <li class="mainNav__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+            <a href="/address/" class="mainNav__link" itemprop="url">
+              <span itemprop="name">Контакты</span>
+            </a>
+          </li>
+          <li class="mainNav__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+            <div class="dropdown">
+              <a href="/catalog/" class="dropdown__toggle" itemprop="url">
+                <span itemprop="name">Продукция</span>
+                <span class="dropdown__icon">
+                  <svg width="8px" height="5px">
+                    <use xlink:href="#icon-toggle"></use>
+                  </svg>
+                </span>
+              </a>
+              <ul class="dropdown__area">
+                <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                  <a class="dropdown__link" href="/big-begi/" itemprop="url">
+                    <span itemprop="name">Биг-беги</span>
+                  </a>
+                </li>
+                <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                  <a class="dropdown__link" href="/meshki/" itemprop="url">
+                    <span itemprop="name">Мешки ПП</span>
+                  </a>
+                </li>
+                <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                  <a class="dropdown__link" href="/plenka/" itemprop="url">
+                    <span itemprop="name">Стрейч пленка</span>
+                  </a>
+                </li>
+                <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                  <a class="dropdown__link" href="/perchatki/" itemprop="url">
+                    <span itemprop="name">Перчатки ХБ</span>
+                  </a>
+                </li>
+                <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                  <a class="dropdown__link" href="/setka/" itemprop="url">
+                    <span itemprop="name">Овощная сетка</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="mainNav__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+            <div class="dropdown">
+              <a href="/big-begi/" class="dropdown__toggle" itemprop="url">
+                <span itemprop="name">Биг-беги</span>
+                <span class="dropdown__icon">
+                  <svg width="8px" height="5px">
+                    <use xlink:href="#icon-toggle"></use>
+                  </svg>
+                </span>
+              </a>
+              <ul class="dropdown__area">
+                <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                  <a class="dropdown__link" href="/big-begi/one-line/" itemprop="url">
+                    <span itemprop="name">Одностропные</span>
+                  </a>
+                </li>
+                <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                  <a class="dropdown__link" href="/big-begi/two-line/" itemprop="url">
+                    <span itemprop="name">Двухстропные</span>
+                  </a>
+                </li>
+                <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                  <a class="dropdown__link" href="/big-begi/three-line-dashes" itemprop="url">
+                    <span itemprop="name">Четырехстропные</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+        <div class="pageHeader__telGroup telGroup">
+          <input type="checkbox" id="tels">
+          <label class="telGroup__toggle" for="tels">
+            <span class="visually-hidden">Показать телефоны</span>
+            <span class="telGroup__icon">
+              <svg width="32px" height="32px">
+                <use xlink:href="#icon-phone-toggle"></use>
+              </svg>
+            </span>
+          </label>
+          <ul class="telGroup__list">
+            <li class="telGroup__item">
+              <p>Екатеринбург:</p>
+              <a href="tel:+73433808338">+7 (343) 380-83-38</a>
+            </li>
+            <li class="telGroup__item">
+              <p>Москва:</p>
+              <a href="tel:+74995009640">+7 (499) 500-96-49</a>
+            </li>
+            <li class="telGroup__item">
+              <p>Бесплатно по РФ:</p>
+              <a href="tel:88003332608">8 800 333-26-08</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <button class="pageHeader__toggle js-header-toggle" type="button" aria-label="закрыть/открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>

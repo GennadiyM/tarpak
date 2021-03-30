@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .big-bag__img {
@@ -21,7 +22,6 @@
   @include style-reset;
 
   margin-bottom: 16px;
-  
 }
 
 .big-bag__content {
@@ -30,8 +30,12 @@
   flex-direction: column;
 }
 
-.big-bag__btn {
+.big-bag__btns {
   margin-top: auto;
+
+  .btn + .btn {
+    margin-top: 8px;
+  }
 }
 
 

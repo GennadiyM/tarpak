@@ -137,7 +137,8 @@ gulp.task('server', function () {
 
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
   gulp.watch('source/img/svg/icon-*.svg', gulp.series('sprite', 'path', 'html', 'refresh'));
-  gulp.watch('source/pages/**/*.html', gulp.series('path', 'html','refresh'));
+  gulp.watch('source/pages/**/*.html', gulp.series('path', 'html', 'refresh'));
+  gulp.watch('source/tempates/*.html', gulp.series('path', 'html', 'refresh'));
   gulp.watch('source/js/**/*.js', gulp.series('js'));
 });
 

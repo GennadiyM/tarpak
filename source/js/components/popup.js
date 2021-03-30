@@ -24,7 +24,7 @@ const popup = function () {
   const btnClosePopup = popup.querySelector(Selector.BTN_CLOSE_POPUP);
   const inputName = popup.querySelector(`#name-p`);
   const overlay = page.querySelector(Selector.OVERLAY);
-  const inputTarget = popup.querySelector(`#target`);
+  const inputTarget = popup.querySelector(`#target-p`);
 
   const getClosePopup = function (evt) {
     evt.preventDefault();

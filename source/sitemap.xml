@@ -1,39 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <url>
-        <loc>https://www.tarpak.ru/</loc>
-        <lastmod>2021-02-01T10:21:09+00:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>http://tarpak.ru/catalog/</loc>
-        <lastmod>2021-02-01T10:21:59+00:00</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://www.tarpak.ru/big-begi/</loc>
-        <lastmod>2021-02-01T10:21:59+00:00</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.tarpak.ru/config/</loc>
-        <lastmod>2021-02-01T10:24:06+00:00</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.tarpak.ru/o_kompanii/</loc>
-        <lastmod>2021-02-01T10:21:09+00:00</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.tarpak.ru/adress/</loc>
-        <lastmod>2021-02-01T10:22:00+00:00</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
+<url>
+<loc>http://tarpak.ru/</loc>
+<lastmod>2021-03-23T09:52:32+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>http://tarpak.ru/o_kompanii/</loc>
+<lastmod>2021-03-23T09:52:33+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://tarpak.ru/config/</loc>
+<lastmod>2021-03-23T09:52:33+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://tarpak.ru/address/</loc>
+<lastmod>2021-03-23T09:52:34+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://tarpak.ru/catalog/</loc>
+<lastmod>2021-03-23T09:52:34+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://tarpak.ru/big-begi/</loc>
+<lastmod>2021-03-23T09:52:34+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://tarpak.ru/meshki/</loc>
+<lastmod>2021-03-23T09:52:33+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://tarpak.ru/plenka/</loc>
+<lastmod>2021-03-23T09:52:33+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://tarpak.ru/perchatki/</loc>
+<lastmod>2021-03-23T09:52:33+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://tarpak.ru/setka/</loc>
+<lastmod>2021-03-23T09:52:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>

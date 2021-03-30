@@ -5,6 +5,8 @@
 }
 
 .pageFooter__blockTitle {
+    @include style-reset;
+    
     color: #ffffff;
     font-weight: 400;
     margin-bottom: 16px;
@@ -20,6 +22,11 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+}
+
+.pageFooter__row + .pageFooter__row {
+    padding-top: 10px;
+    border-top: 1px solid rgba(#fff, 0.1);
 }
 
 .pageFooter__block {
@@ -54,4 +61,27 @@
             color: $color-accent;
         }
     }
+}
+
+.pageFooter__logo {
+    a {
+        @include tablet {
+            transition: opacity $transition-2;
+
+            &:hover,
+            &:focus {
+                opacity: 0.7;
+            }
+
+            &:active {
+                opacity: 0.4;
+            }
+        }
+    }
+}
+
+.pageFooter__copyright {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 14px;
 }

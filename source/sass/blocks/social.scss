@@ -1,0 +1,24 @@
+.social {
+    @include list-reset;
+
+    display: flex;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.social__link {
+    padding: 5px;
+    color: #ffffff;
+    transition: all $transition-2;
+
+    @include tablet {
+        &:hover,
+        &:focus {
+            color: $color-accent;
+        }
+
+        &:active {
+            opacity: 0.4;
+        }
+    }
+}

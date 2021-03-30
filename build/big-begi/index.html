@@ -66,7 +66,7 @@
 <polygon points="18.65 11.35 10 2.71 1.35 11.35 0.65 10.65 10 1.29 19.35 10.65"></polygon>
 <polygon points="15 4 18 4 18 7 17 7 17 5 15 5"></polygon>
 <polygon points="3 11 4 11 4 18 7 18 7 12 12 12 12 18 16 18 16 11 17 11 17 19 11 19 11 13 8 13 8 19 3 19"></polygon>
-</symbol><symbol id="icon-location" viewBox="0 0 20 20">
+</symbol><symbol id="icon-insta"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z" fill="currentColor"></path></symbol><symbol id="icon-location" viewBox="0 0 20 20">
 <path fill="none" stroke="#000" stroke-width="1.01" d="M10,0.5 C6.41,0.5 3.5,3.39 3.5,6.98 C3.5,11.83 10,19 10,19 C10,19 16.5,11.83 16.5,6.98 C16.5,3.39 13.59,0.5 10,0.5 L10,0.5 Z"></path>
 <circle fill="none" stroke="#000" cx="10" cy="6.8" r="2.3"></circle>
 </symbol><symbol id="icon-mail" viewBox="0 0 20 20">
@@ -77,13 +77,12 @@
 <path d="M4.35355 0.646447C4.15829 0.451184 3.84171 0.451184 3.64645 0.646447L0.464466 3.82843C0.269204 4.02369 0.269204 4.34027 0.464466 4.53553C0.659728 4.7308 0.976311 4.7308 1.17157 4.53553L4 1.70711L6.82843 4.53553C7.02369 4.7308 7.34027 4.7308 7.53553 4.53553C7.7308 4.34027 7.7308 4.02369 7.53553 3.82843L4.35355 0.646447ZM4.5 2V1H3.5V2H4.5Z" fill="currentColor"></path>
 </symbol></svg>
 </div>
+
 <header class="page__header pageHeader js-header">
   <div class="pageHeader__container page__container">
-    <a class="pageHeader__logo" href="/">
+    <a href="/" class="pageHeader__logo">
       <picture>
-        <source type="image/webp" media="(min-width: 768px)" srcset="/img/logo/logo.webp 1x, /img/logo/logo@2x.webp 2x">
         <source type="image/webp" srcset="/img/logo/logo-mob.webp 1x, /img/logo/logo-mob@2x.webp 2x">
-        <source media="(min-width: 768px)" srcset="/img/logo/logo.png 1x, /img/logo/logo@2x.png 2x">
         <img src="/img/logo/logo-mob.png" srcset="/img/logo/logo.png 1x, /img/logo/logo-mob@2x.png 2x" alt="Тарпак" title="Тарпак">
       </picture>
     </a>
@@ -105,6 +104,7 @@
               <span itemprop="name">Контакты</span>
             </a>
           </li>
+          
           <li class="mainNav__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
             <div class="dropdown">
               <a href="/catalog/" class="dropdown__toggle" itemprop="url">
@@ -116,11 +116,6 @@
                 </span>
               </a>
               <ul class="dropdown__area">
-                <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-                  <a class="dropdown__link" href="/big-begi/" itemprop="url">
-                    <span itemprop="name">Биг-беги</span>
-                  </a>
-                </li>
                 <li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
                   <a class="dropdown__link" href="/meshki/" itemprop="url">
                     <span itemprop="name">Мешки ПП</span>
@@ -187,16 +182,8 @@
           </label>
           <ul class="telGroup__list">
             <li class="telGroup__item">
-              <p>Екатеринбург:</p>
-              <a href="tel:+73433808338">+7 (343) 380-83-38</a>
-            </li>
-            <li class="telGroup__item">
-              <p>Москва:</p>
-              <a href="tel:+74995009640">+7 (499) 500-96-49</a>
-            </li>
-            <li class="telGroup__item">
               <p>Бесплатно по РФ:</p>
-              <a href="tel:88003332608">8 800 333-26-08</a>
+              <a class="mgo-number" href="tel:+78003332608">8 800 333-26-08</a>
             </li>
           </ul>
         </div>
@@ -208,22 +195,23 @@
     </button>
   </div>
 </header>
+
 <main class="page__main">
   <section class="promo promo_add">
     <div class="promo__container page__container">
       <ul class="promo__breadcrumbs breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-        <a itemprop="item" href="/">
-          <span itemprop="name">Главная</span>
-        </a>
-        <meta itemprop="position" content="1">
-      </li>
-      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-        <span itemprop="name">Биг-бэги</span>
-        <meta itemprop="item" content="https://tarpak.ru/o_kompanii/">
-        <meta itemprop="position" content="2">
-      </li>
-    </ul>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="/">
+            <span itemprop="name">Главная</span>
+          </a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+          <span itemprop="name">Биг-бэги</span>
+          <meta itemprop="item" content="https://tarpak.ru/o_kompanii/">
+          <meta itemprop="position" content="2">
+        </li>
+      </ul>
       <h1 class="promo__title"><span>Биг-бэги</span></h1>
     </div> 
   </section>
@@ -335,7 +323,10 @@
                   <div class="big-bag__content">
                     <h3 class="big-bag__title">Одностропные</h3>
                     <p class="big-bag__text">Мешки имеют одну стропу, которая выступает продолжением самого контейнера. В верхней точке стропу оборачивают цветной  манжетой, предназначенной для защиты петли от разрыва и привлечения внимания оператора во время механизированных погрузочно-разгрузочных работ.</p>
-                    <a href="/big-begi/one-line/" class="big-bag__btn btn js-btn btn_full" data-target="Одностропные">Заказать</a>
+                    <div class="big-bag__btns">
+                      <a href="/big-begi/one-line/" class="btn btn_primary btn_full">Подробнее</a>
+                      <a href="/big-begi/one-line/" class="btn js-btn btn_full" data-target="Одностропные">Заказать</a>
+                    </div>
                   </div>
                 </article>
               </li>
@@ -346,8 +337,11 @@
                   </div>
                   <div class="big-bag__content">
                     <h3 class="big-bag__title">Двухстропные</h3>
-                    <p class="big-bag__text">Мешки имеют одну стропу, которая выступает продолжением самого контейнера. В верхней точке стропу оборачивают цветной  манжетой, предназначенной для защиты петли от разрыва и привлечения внимания оператора во время механизированных погрузочно-разгрузочных работ.</p>
-                    <a href="/big-begi/two-line/" class="big-bag__btn btn js-btn btn_full" data-target="Двухстропные">Заказать</a>
+                    <p class="big-bag__text">Внешне представляют собой большой мешок с 2 грузоподъёмными петлями, которые служат продолжением упаковки.</p>
+                    <div class="big-bag__btns">
+                      <!-- <a href="/big-begi/two-line/" class="btn btn_primary btn_full">Подробнее</a> -->
+                      <a href="/big-begi/two-line/" class="btn js-btn btn_full" data-target="Двухстропные">Заказать</a>
+                    </div>
                   </div>
                 </article>
               </li>
@@ -358,12 +352,181 @@
                   </div>
                   <div class="big-bag__content">
                     <h3 class="big-bag__title">Четырехстропные</h3>
-                    <p class="big-bag__text">Мешки имеют одну стропу, которая выступает продолжением самого контейнера. В верхней точке стропу оборачивают цветной  манжетой, предназначенной для защиты петли от разрыва и привлечения внимания оператора во время механизированных погрузочно-разгрузочных работ.</p>
-                    <a href="/big-begi/three-line-dashes/" class="big-bag__btn btn js-btn btn_full" data-target="Четырехстропные">Заказать</a>
+                    <p class="big-bag__text">Мягкие контейнеры данного типа комплектуют 4 стропами, изготовленными на основе полипропиленовой ленты шириной до 6 см и высотой до 30 см. Каждая стропа рассчитана на разрывную нагрузку около 2 т.</p>
+                    <div class="big-bag__btns">
+                      <a href="/big-begi/three-line-dashes/" class="btn btn_primary btn_full">Подробнее</a>
+                      <a href="/big-begi/three-line-dashes/" class="btn js-btn btn_full" data-target="Четырехстропные">Заказать</a>
+                    </div>
                   </div>
                 </article>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pageGrid">
+    <div class="pageGrid__layout pageGrid__layout_decor">
+      <div class="pageGrid__wrapper">
+        <div class="pageGrid__main">
+          <div class="pageGrid__header">
+            <h2>Стоимость</h2>
+          </div>
+          <div class="pageGrid__content">
+            <div class="pageGrid__row">
+              <p>Наша компания является непосредственным производителем продукции. Единственным закупочным материалом является полипропиленовое полотно, тогда как остальные конструктивные элементы мы производим самостоятельно. Таким образом, нам удается снизить производственные затраты и обеспечить максимально низкие цены на весь ассортимент товаров.</p>
+              <p>Стоимость биг бэгов рассчитывается с учетом ряда факторов, главные из которых:</p>
+              <ul>
+                <li>размер изделия, количество слоев, число строп;</li>
+                <li>толщина и тип используемой ткани;</li>
+                <li>наличие дополнительных модулей: юбки, клапаны, вкладыши;</li>
+                <li>количество изделий в партии (чем больше штук, тем ниже стоимость единицы);</li>
+                <li>наличие внешнего или внутреннего ламинирования;</li>
+                <li>необходимость брендирования продукции: логотип, контактные данные и т.д.</li>
+              </ul>
+            </div>
+            <div class="pageGrid__row">
+              <a class="btn btn_md btn_white" href="/config/">
+                <span class="btn__text">Собрать свой биг-бэг</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pageGrid pageGrid_gray">
+    <div class="pageGrid__layout">
+      <div class="pageGrid__wrapper">
+        <div class="pageGrid__main">
+          <div class="pageGrid__header">
+            <h2>Возможные модификации изготовления МКР:<br>
+              <small>размеры, объем "биг бэгов", диаметр и габариты дна контейнеров.</small>
+            </h2>
+          </div>
+          <div class="pageGrid__content">
+            <div class="pageGrid__row pageGrid__row_table">
+              <table class="uk-table uk-table-border uk-table-middle uk-table-justify uk-table-divider uk-table-striped uk-table-hover">
+                <tbody>
+                  <tr>
+                    <th class="uk-table__bold uk-width-330 uk-width-large">Габаритные размеры дна, см</th>
+                    <td>60х60</td>
+                    <td>72,5х72,5</td>
+                    <td>75х75</td>
+                    <td>80х80</td>
+                    <td>85х85</td>
+                    <td>90х90</td>
+                    <td>95х95</td>
+                    <td>100х100</td>
+                  </tr>
+                  <tr>
+                    <th class="uk-table__bold uk-width-330 uk-width-large">Плоская ширина контейнера, см</th>
+                    <td>120</td>
+                    <td>145</td>
+                    <td>150</td>
+                    <td>160</td>
+                    <td>170</td>
+                    <td>180</td>
+                    <td>190</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <th class="uk-table__bold uk-width-330 uk-width-large">Высота загрузки для данного типоразмера, см</th>
+                    <td>60-150</td>
+                    <td>60-185</td>
+                    <td>60-190</td>
+                    <td>60-200</td>
+                    <td>60-215</td>
+                    <td>60-225</td>
+                    <td>60-240</td>
+                    <td>60-250</td>
+                  </tr>
+                  <tr>
+                    <th class="uk-table__bold uk-width-330 uk-width-large">Диаметр загруженного контейнера, см</th>
+                    <td>77</td>
+                    <td>93</td>
+                    <td>96</td>
+                    <td>102</td>
+                    <td>109</td>
+                    <td>115</td>
+                    <td>122</td>
+                    <td>128</td>
+                  </tr>
+                  <tr>
+                    <th class="uk-table__bold uk-width-330 uk-width-large">Условный объем вместимости контейнера, м³</th>
+                    <td>0,3-0,7</td>
+                    <td>0,4-1,1</td>
+                    <td>0,4-1,4</td>
+                    <td>0,5-1,6</td>
+                    <td>0,6-2,0</td>
+                    <td>0,6-2,3</td>
+                    <td>0,7-2,8</td>
+                    <td>0,8-3,0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pageGrid">
+    <div class="pageGrid__layout">
+      <div class="pageGrid__wrapper">
+        <div class="pageGrid__main">
+          <div class="pageGrid__header">
+            <h2>Возможные модификации изготовления МКР:</h2>
+          </div>
+          <div class="pageGrid__content">
+            <div class="pageGrid__row">
+              <table class="uk-table uk-table-full uk-table-border uk-table-left uk-table-justify uk-table-divider uk-table-striped uk-table-hover">
+                <thead>
+                  <tr>
+                    <th class="uk-table__bold uk-width-330-m200">Наименование показателя</th>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="uk-table__medium uk-width-330-m200">Ткань грузонесущей оболочки</th>
+                    <td>с разной плотностью полипропилена, количеством слоев ткани</td>
+                  </tr>
+                  <tr>
+                    <th class="uk-table__medium uk-width-330-m200">Грузоподъемность</th>
+                    <td>500 кг, 1 т и выше</td>
+                  </tr>
+                  <tr>
+                    <th class="uk-table__medium uk-width-330-m200">Вид дна</th>
+                    <td>втачной прямоугольник, «звезда», люк</td>
+                  </tr>
+                  <tr>
+                    <th class="uk-table__medium uk-width-330-m200">Исполнение верха</th>
+                    <td>открытый, клапан, крышка-люк</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="uk-table uk-table-full uk-table-border uk-table-left uk-table-justify uk-table-divider uk-table-striped uk-table-hover">
+                <thead>
+                  <tr>
+                    <th class="uk-table__bold uk-width-330-m200">Наличие и количество различных конструктивных элементов:</th>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="uk-table__medium uk-width-330-m200">стропы</th>
+                    <td>1, 2, 4</td>
+                  </tr>
+                  <tr>
+                    <th class="uk-table__medium uk-width-330-m200">ПЭ вкладыш</th>
+                    <td>U-образный, с горловиной, термостойкий, предназначенный для пищевых продуктов</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -377,7 +540,7 @@
       <div class="formBlock__cell formBlock__cell_form">
         <p class="formBlock__subTitle">Оставить заявку</p>
         <iframe style="display:none" name="formBlock"></iframe>
-        <form class="formBlock__form form js-form" method="post" target="formBlock" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
+        <form class="formBlock__form form js-form" method="post" target="formBlock" action="https://script.google.com/macros/s/AKfycbx-bwhSKd_FwT2llXjc1SBOUHn02CRH1fOS_oV7L-ribtL_ANW_z783v5q66hOC05W-Pg/exec">
           <div class="form__main">
             <input id="honeypot" type="text" name="honeypot" value="" class="visually-hidden">
             <label class="form__area formArea">
@@ -409,7 +572,8 @@
     </div>
   </div>
 </main>
-<footer class="page__footer pageFooter" id="contacts">
+
+<footer class="page__footer pageFooter">
   <div class="page__container">
     <div class="pageFooter__row">
       <div class="pageFooter__block">
@@ -456,13 +620,13 @@
             </button>
           </li>
           <li>
-            <a class="badge" href="tel:+74995009649">
+            <a class="badge mgo-number" href="tel:+78003332608">
               <span class="badge__icon">
                 <svg width="20px" height="20px">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </span>
-              <span class="badge__text">+7 499 500-96-49</span>
+              <span class="badge__text">8 800 333-26-08</span>
             </a>
           </li>
           <li>
@@ -501,13 +665,13 @@
             </button>
           </li>
           <li>
-            <a class="badge" href="tel:+74995009649">
+            <a class="badge mgo-number" href="tel:+78003332608">
               <span class="badge__icon">
                 <svg width="20px" height="20px">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </span>
-              <span class="badge__text">+7 343 380-83-38</span>
+              <span class="badge__text">8 800 333-26-08</span>
             </a>
           </li>
           <li>
@@ -526,13 +690,13 @@
         <h2 class="pageFooter__blockTitle">Контакты в Екатеринбурге:</h2>
         <ul class="pageFooter__list">
           <li>
-            <a class="badge" href="tel:+74995009649">
+            <a class="badge mgo-number" href="tel:+78003332608">
               <span class="badge__icon">
                 <svg width="20px" height="20px">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </span>
-              <span class="badge__text">+7 343 380-83-38</span>
+              <span class="badge__text">8 800 333-26-08</span>
             </a>
           </li>
           <li>
@@ -548,8 +712,37 @@
         </ul>
       </div>
     </div>
+    <div class="pageFooter__row">
+      <div class="pageFooter__block">
+        <div class="pageFooter__logo">
+          <a href="/">
+            <picture>
+              <img src="/img/logo/logo-white.png" srcset="/img/logo/logo-white.png 1x, /img/logo/logo-white@2x.png 2x" width="105" height="50" alt="Тарпак" title="Тарпак">
+            </picture>
+          </a>
+          <p class="pageFooter__copyright">© 2016-2021 компания Тарпак</p>
+        <p></p>
+      </div>
+    </div>
+    <div class="pageFooter__block">
+    </div>
+    <div class="pageFooter__block">
+    </div>
+    <div class="pageFooter__block">
+      <h2 class="pageFooter__blockTitle">Мы в социальных сетях:</h2>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="https://www.instagram.com/tarpak2020/" aria-label="Наш инстаграмм">
+            <svg width="21px" height="21px">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-</footer>
+</div></footer>
+
 <div class="popup js-popup">
   <button class="popup__close js-close" type="button" aria-label="Закрыть попап"></button>
   <div class="popup__logo">
@@ -559,7 +752,7 @@
     </picture>
   </div>
   <iframe style="display:none" name="popup"></iframe>
-  <form class="form form_popup js-form" method="post" target="popup" action="https://script.google.com/macros/s/AKfycbyGoF-tKK8WIBHhK97qjApHBxwb1jPoxbIHBCAvxYf_eyddoJ_wCetwww/exec">
+  <form class="form form_popup js-form" method="post" target="popup" action="https://script.google.com/macros/s/AKfycbx-bwhSKd_FwT2llXjc1SBOUHn02CRH1fOS_oV7L-ribtL_ANW_z783v5q66hOC05W-Pg/exec">
     <div class="form__main">
       <input id="honeypot-p" type="text" name="honeypot" value="" class="visually-hidden">
       <label class="form__area formArea formArea_gray">
@@ -577,7 +770,7 @@
         <input type="email" id="email-p" name="Email" placeholder="example@mail.ru">
         <span class="formArea__error">Заполните поле</span>
       </label>
-      <input id="target" type="text" name="Формат" value="" class="visually-hidden">
+      <input id="target-p" type="text" name="Формат" value="" class="visually-hidden">
       <button class="btn btn_full btn_primary form__btn" type="submit">Отправить</button>
     </div>
     <div class="form__success">

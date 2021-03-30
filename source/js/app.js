@@ -9,6 +9,7 @@ import bb from './components/bb-slider.js';
 import phone from './components/tel.js';
 import form from './components/form.js';
 import popup from './components/popup.js';
+import link from './components/link.js';
 
 window.onload = function () {
   popup();
@@ -19,4 +20,5 @@ window.onload = function () {
   phone();
   form();
   bb();
+  link();
 };

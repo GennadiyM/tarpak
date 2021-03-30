@@ -46,6 +46,8 @@ const form = function () {
             return;
         }
 
+        const eventType = targetForm.classList.contains(`form_calc`) ? `submit_form_konstruktor` : `form_submit`;
+        dataLayer.push({'event': eventType});
         targetForm.classList.add(`form_success`);
 
         window.setTimeout(function() {

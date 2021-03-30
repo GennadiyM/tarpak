@@ -130,3 +130,56 @@
 {
 	transition: background-color .1s linear;
 }
+
+.uk-table-border {
+	td {
+		border-left: 1px solid rgba(0,0,0, 0.5);
+		text-align: center;
+	}
+
+	
+}
+
+th.uk-table__bold {
+	font-weight: 700;
+	color: black;
+	font-size: 12px;
+}
+
+.uk-width-330 {
+	width: 150px;
+
+	@include tablet {
+		width: 330px;
+	}
+}
+
+.uk-width-330-m200 {
+	width: 200px;
+
+	@include tablet {
+		width: 330px;
+	}
+}
+
+.uk-table-left.uk-table-border td {
+	text-align: left;
+}
+
+th.uk-table__medium {
+	font-weight: 500;
+	color: black;
+	font-size: 12px;
+}
+
+.uk-table {
+	width: 1024px;
+
+	@include tablet {
+		width: 100%;
+	}
+}
+
+.uk-table-full {
+	width: 100%;
+}
